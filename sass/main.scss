@@ -2,9 +2,11 @@
 
 // importing sass modules
 @import '_vars';
+@import 'modules/_reset';
 @import 'modules/_header';
 @import 'modules/_footer';
 @import 'modules/_form';
+@import 'modules/_adminForm';
 
 
 // any main styling effects

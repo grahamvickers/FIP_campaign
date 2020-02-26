@@ -23,19 +23,22 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins&display=swap" rel="stylesheet">
     <title>Login Page</title>
 </head>
 <body>
-    <h2>Login Page</h2>
-    <?php echo !empty($message)? $message: ''; ?>
-    <form action="admin_login.php" method="post">
-        <label for="">Username:</label>
-        <input type="text" name="username" id="username" value="">
+    <main>
+        <h2>Login Page</h2>
+        <?php echo !empty($message)? $message: ''; ?>
+        <form class="adminForm" action="admin_login.php" method="post">
+            <div>
+                <input type="text" name="username" value="" placeholder="Your username.." required>
+                <input type="password" name="password" value="" placeholder="And your password.." required>
 
-        <label for="">Password:</label>
-        <input type="password" name="password" id="password" value="">
-
-        <button name="submit">Submit</button>
-    </form>
+                <button name="submit">Submit</button>
+            </div>
+        </form>
+    </main>
 </body>
 </html>
