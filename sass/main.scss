@@ -1,3 +1,38 @@
-// This is the main stylesheet
+// this is the main style sheet
 
-// importing modules
+// importing sass modules
+@import '_vars';
+@import 'modules/_header';
+@import 'modules/_footer';
+@import 'modules/_form';
+
+
+// any main styling effects
+.hidden{
+    display: none;
+}
+
+body{
+   //width: 100%;
+   background-color: #f2f2f2;
+}
+
+h2{
+    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    color: $heading-color;
+}
+
+h3{
+    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    color: $button-color;
+}
+
+h4{
+    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    color: $h4-color;
+}
+
+p{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: black;
+}

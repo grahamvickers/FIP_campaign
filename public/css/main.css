@@ -1,1 +1,103 @@
-/* sass will fill in the rest*/
+header {
+  background-color: #ff4a6b; }
+
+#headCon {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30px;
+  max-width: 1600px; }
+
+#logo {
+  width: 100px; }
+
+footer {
+  color: #3936ab; }
+  footer div {
+    padding: 30px;
+    text-align: center; }
+
+.formPage {
+  margin-top: 60px;
+  text-align: center; }
+  .formPage div {
+    margin-bottom: 40px; }
+    .formPage div h2 {
+      text-align: center;
+      color: #3936ab; }
+    .formPage div form {
+      display: flex;
+      flex-direction: column;
+      align-items: center; }
+      .formPage div form input {
+        border-radius: 30px;
+        border-style: none;
+        border: 1px solid #3936ab;
+        padding: 10px;
+        margin: 10px;
+        font-size: 14px;
+        min-width: 250px;
+        text-decoration: none;
+        outline: none; }
+      .formPage div form button {
+        border-radius: 30px;
+        border-style: none;
+        background-color: #3936ab;
+        padding: 10px;
+        margin: 10px;
+        font-size: 14px;
+        min-width: 150px;
+        text-decoration: none;
+        color: white; }
+      .formPage div form button:hover {
+        cursor: pointer; }
+
+.route {
+  font-family: 'Oswald', sans-serif;
+  text-decoration: none;
+  color: #3f3f3f;
+  margin-top: 40px;
+  margin: 20px; }
+
+.route:hover {
+  text-decoration: none;
+  color: #3936ab;
+  transition: .2s ease; }
+
+@media screen and (min-width: 640px) {
+  form input {
+    width: 400px;
+    height: 30px;
+    font-size: 18px; }
+
+  button {
+    width: 200px;
+    height: 50px; } }
+@media screen and (min-width: 960px) {
+  form input {
+    width: 550px;
+    height: 30px; } }
+.hidden {
+  display: none; }
+
+body {
+  background-color: #f2f2f2; }
+
+h2 {
+  font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+  color: #ff4a6b; }
+
+h3 {
+  font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+  color: #3936ab; }
+
+h4 {
+  font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+  color: #efcc4f; }
+
+p {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: black; }
+
+/*# sourceMappingURL=main.css.map */

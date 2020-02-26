@@ -1,0 +1,17 @@
+// this is the header styling page
+header{
+    background-color: $secondary-bg-color;
+}
+
+#headCon{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    padding: 30px;
+    max-width: 1600px;
+}
+
+#logo{
+    width: 100px;
+}

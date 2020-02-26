@@ -1,6 +1,6 @@
 export default {
     template: `
-    <section class="splashPage">
+    <section>
         <h2>Welcome to the cool site</h2>
     </section>
     `,
