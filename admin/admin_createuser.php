@@ -24,6 +24,8 @@ if(isset($_POST['submit'])){
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="../public/css/main.css">
+    <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins&display=swap" rel="stylesheet">
     <title>Create User</title>
 </head>
 <body>
@@ -32,7 +34,7 @@ if(isset($_POST['submit'])){
     <?php echo!empty($message)? $message: '';?>
     <form action="admin_createuser.php" method="post">
         <label>First Name</label>
-        <input type="text" name="fname" value=""><br><br>
+        <input type="text" name="fname" value="" placeholder=""><br><br>
         <label>Username</label>
         <input type="text" name="username" value=""><br><br>
         <label>Password</label>
