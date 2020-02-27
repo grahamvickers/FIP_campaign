@@ -1,7 +1,16 @@
 footer{
-    color: $button-color;
-    div{
-        padding: 30px; 
-        text-align: center;
+    background-color: $button-color;
+    padding: 30px; 
+    div{ 
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        p{
+            color: #efcc4f;
+            font-size: 12px;
+        }
+    }
+    img{
+        width:50px;
     }
 }

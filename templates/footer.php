@@ -2,9 +2,6 @@
 <footer>
     <div>
         <p>©2020 ALL RIGHTS RESERVED. Designed & Created by Modern Link Media</p>
-    </div>
-
-    <div>
-        <!-- add in social media images -->
+        <img src="./public/images/instagram.svg" alt="Instagram Logo">
     </div>
 </footer>
