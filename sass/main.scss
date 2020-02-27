@@ -4,7 +4,6 @@
 @import '_vars';
 @import 'modules/_reset';
 @import 'modules/_header';
-@import 'modules/_footer';
 @import 'modules/_form';
 @import 'modules/_adminForm';
 
@@ -17,24 +16,31 @@
 body{
    //width: 100%;
    background-color: #f2f2f2;
+   box-sizing: border-box;
 }
 
 h2{
     font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
     color: $heading-color;
+    font-size: 44px;
 }
 
 h3{
     font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
-    color: $button-color;
+    color: $heading-color;
+    font-size: 26px;
 }
 
 h4{
-    font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
     color: $h4-color;
+    font-size: 22px;
 }
 
 p{
     font-family: 'Poppins', Arial, Helvetica, sans-serif;
-    color: black;
+    color: $copy-color;
+    font-size: 16px;
 }
+
+@import 'modules/_footer';

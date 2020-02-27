@@ -8,10 +8,27 @@ header{
     flex-direction: row;
     align-items: center;
     justify-content: space-between;
-    padding: 30px;
+    margin-bottom: 40px;
+    padding: 10px;
     max-width: 1600px;
 }
 
 #logo{
-    width: 100px;
+    width: 50px;
+}
+
+@media screen and (min-width: 640px) {
+    #logo{
+        width: 100px;
+    }
+}
+
+@media screen and (min-width: 960px) {
+    #headCon{
+        margin-left: 60px;
+        margin-right: 60px;
+        .route{
+            margin-left: 40px;
+        }
+    }
 }

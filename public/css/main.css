@@ -6,41 +6,60 @@ header {
   flex-direction: row;
   align-items: center;
   justify-content: space-between;
-  padding: 30px;
+  margin-bottom: 40px;
+  padding: 10px;
   max-width: 1600px; }
 
 #logo {
-  width: 100px; }
+  width: 50px; }
 
-footer {
-  color: #3936ab; }
-  footer div {
-    padding: 30px;
-    text-align: center; }
-
+@media screen and (min-width: 640px) {
+  #logo {
+    width: 100px; } }
+@media screen and (min-width: 960px) {
+  #headCon {
+    margin-left: 60px;
+    margin-right: 60px; }
+    #headCon .route {
+      margin-left: 40px; } }
 .formPage {
   margin-top: 60px;
   text-align: center; }
-  .formPage div {
-    margin-bottom: 40px; }
-    .formPage div h2 {
+  .formPage #signupWrap {
+    display: flex;
+    justify-content: center;
+    margin-left: 40px;
+    margin: 80px 80px 40px 80px; }
+  .formPage .signup {
+    margin-bottom: 40px;
+    background-color: #e4e4e4;
+    border-radius: 50px; }
+    .formPage .signup h2 {
       text-align: center;
-      color: #3936ab; }
-    .formPage div form {
+      color: #3936ab;
+      font-size: 38px; }
+    .formPage .signup h3 {
+      font-size: 22px;
+      font-family: 'Poppins Regular', Arial, Helvetica, sans-serif; }
+    .formPage .signup form {
       display: flex;
       flex-direction: column;
       align-items: center; }
-      .formPage div form input {
+      .formPage .signup form input {
         border-radius: 30px;
         border-style: none;
-        border: 1px solid #3936ab;
+        border: 2px solid #3936ab;
         padding: 10px;
         margin: 10px;
         font-size: 14px;
-        min-width: 250px;
+        min-width: 100px;
         text-decoration: none;
-        outline: none; }
-      .formPage div form button {
+        outline: none;
+        background-color: #f2f2f2; }
+      .formPage .signup form input:focus {
+        background-color: #3936ab;
+        color: #f2f2f2; }
+      .formPage .signup form button {
         border-radius: 30px;
         border-style: none;
         background-color: #3936ab;
@@ -50,7 +69,7 @@ footer {
         min-width: 150px;
         text-decoration: none;
         color: white; }
-      .formPage div form button:hover {
+      .formPage .signup form button:hover {
         cursor: pointer; }
 
 .route {
@@ -73,91 +92,68 @@ footer {
 
   button {
     width: 200px;
-    height: 50px; } }
+    height: 50px; }
+
+  .signup {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    text-align: left;
+    padding: 30px; }
+
+  #line {
+    width: 2px;
+    border-radius: 50px;
+    height: 200px;
+    background-color: #3f3f3f;
+    margin-right: 20px;
+    margin-left: 20px; } }
 @media screen and (min-width: 960px) {
   form input {
-    width: 550px;
-    height: 30px; } }
-.adminForm {
-  margin-top: 60px;
-  text-align: center; }
-  .adminForm div {
-    margin-bottom: 40px; }
-    .adminForm div h2 {
-      text-align: center;
-      color: #3936ab; }
-    .adminForm div form {
-      display: flex;
-      flex-direction: column;
-      align-items: center; }
-      .adminForm div form input {
-        border-radius: 50px;
-        border-style: none;
-        border: 1px solid #3936ab;
-        padding: 10px;
-        margin: 10px;
-        font-size: 14px;
-        min-width: 250px;
-        text-decoration: none;
-        outline: none; }
-      .adminForm div form button {
-        border-radius: 30px;
-        border-style: none;
-        background-color: #3936ab;
-        padding: 10px;
-        margin: 10px;
-        font-size: 14px;
-        min-width: 150px;
-        text-decoration: none;
-        color: white; }
-      .adminForm div form button:hover {
-        cursor: pointer; }
+    width: 300px;
+    height: 30px; }
 
-.route {
-  font-family: 'Oswald', sans-serif;
-  text-decoration: none;
-  color: #3f3f3f;
-  margin-top: 40px;
-  margin: 20px; }
-
-.route:hover {
-  text-decoration: none;
-  color: #3936ab;
-  transition: .2s ease; }
-
-@media screen and (min-width: 640px) {
-  form input {
-    width: 400px;
-    height: 30px;
-    font-size: 18px; }
-
-  button {
-    width: 200px;
-    height: 50px; } }
-@media screen and (min-width: 960px) {
-  form input {
-    width: 550px;
-    height: 30px; } }
+  .signup {
+    max-width: 1400px; } }
 .hidden {
   display: none; }
 
 body {
-  background-color: #f2f2f2; }
+  background-color: #f2f2f2;
+  box-sizing: border-box; }
 
 h2 {
   font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
-  color: #ff4a6b; }
+  color: #3936ab;
+  font-size: 44px; }
 
 h3 {
   font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
-  color: #3936ab; }
+  color: #3936ab;
+  font-size: 26px; }
 
 h4 {
-  font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
-  color: #efcc4f; }
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: #efcc4f;
+  font-size: 22px; }
 
 p {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
-  color: black; }
+  color: #3f3f3f;
+  font-size: 16px; }
+
+footer {
+  background-color: #3936ab;
+  padding: 30px; }
+  footer div {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between; }
+    footer div p {
+      color: #efcc4f;
+      font-size: 12px; }
+  footer img {
+    width: 50px; }
 
 /*# sourceMappingURL=main.css.map */
