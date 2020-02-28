@@ -25,20 +25,28 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins&display=swap" rel="stylesheet">
-    <title>Login Page</title>
+    <title>Admin Login Page</title>
 </head>
 <body>
     <main>
-        <h2>Login Page</h2>
-        <?php echo !empty($message)? $message: ''; ?>
-        <form class="adminForm" action="admin_login.php" method="post">
-            <div>
-                <input type="text" name="username" value="" placeholder="Your username.." required>
-                <input type="password" name="password" value="" placeholder="And your password.." required>
+        <?php include '../templates/headerAdmin.php'?>
 
-                <button name="submit">Submit</button>
-            </div>
-        </form>
+        <h2>Admin Login Page</h2>
+
+        <?php echo !empty($message)? $message: ''; ?>
+
+        <div class="formPage">
+            <form class="adminForm" action="admin_login.php" method="post">
+                <div id="signupWrap">
+                    <input type="text" name="username" value="" placeholder="Your username.." required>
+                    <input type="password" name="password" value="" placeholder="And your password.." required>
+
+                    <button name="submit">Submit</button>
+                </div>
+            </form>
+        </div>
+
+        <?php include '../templates/footerAdmin.php'?>
     </main>
 </body>
 </html>

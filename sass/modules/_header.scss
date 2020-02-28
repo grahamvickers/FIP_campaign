@@ -1,6 +1,9 @@
 // this is the header styling page
 header{
     background-color: $secondary-bg-color;
+    .route{
+        font-family: 'Poppins Regular', Arial, Helvetica, sans-serif;
+    }
 }
 
 #headCon{
@@ -29,6 +32,7 @@ header{
         margin-right: 60px;
         .route{
             margin-left: 40px;
+            font-family: 'Poppins Bold', Arial, Helvetica, sans-serif;
         }
     }
 }

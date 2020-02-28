@@ -42,7 +42,7 @@ function login($username, $password, $ip){
         }
 
         if(isset($id)){
-            redirect_to('index.php');
+            redirect_to('dashboard.php');
         }
     }else{
         // user does not exist
@@ -56,7 +56,7 @@ function login($username, $password, $ip){
 
 function confirm_logged_in(){
     if(!isset($_SESSION['user_id'])){
-        redirect_to('admin_login.php');
+        redirect_to('dashboard.php');
     }
 }
 

@@ -1,5 +1,7 @@
 header {
   background-color: #ff4a6b; }
+  header .route {
+    font-family: 'Poppins Regular', Arial, Helvetica, sans-serif; }
 
 #headCon {
   display: flex;
@@ -21,7 +23,8 @@ header {
     margin-left: 60px;
     margin-right: 60px; }
     #headCon .route {
-      margin-left: 40px; } }
+      margin-left: 40px;
+      font-family: 'Poppins Bold', Arial, Helvetica, sans-serif; } }
 .formPage {
   margin-top: 60px;
   text-align: center; }
@@ -48,7 +51,6 @@ header {
       .formPage .signup form input {
         border-radius: 30px;
         border-style: none;
-        border: 2px solid #3936ab;
         padding: 10px;
         margin: 10px;
         font-size: 14px;
@@ -66,11 +68,13 @@ header {
         padding: 10px;
         margin: 10px;
         font-size: 14px;
-        min-width: 150px;
+        width: 150px;
         text-decoration: none;
         color: white; }
       .formPage .signup form button:hover {
         cursor: pointer; }
+      .formPage .signup form button:active {
+        text-decoration: none; }
 
 .route {
   font-family: 'Oswald', sans-serif;
@@ -116,12 +120,52 @@ header {
 
   .signup {
     max-width: 1400px; } }
+.adminCon {
+  display: flex;
+  flex-direction: column;
+  justify-content: center; }
+  .adminCon .optionCon {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+    height: 300;
+    width: 250px;
+    background-color: #e4e4e4;
+    margin: 40px;
+    padding: 20px;
+    border-radius: 20px; }
+    .adminCon .optionCon img {
+      width: 220px;
+      margin-bottom: 20px; }
+    .adminCon .optionCon a {
+      border-radius: 30px;
+      border-style: none;
+      background-color: #3936ab;
+      padding: 10px;
+      margin: 10px;
+      font-size: 14px;
+      width: 150px;
+      text-decoration: none;
+      color: white;
+      text-align: center;
+      font-family: 'Poppins', Arial, Helvetica, sans-serif; }
+      .adminCon .optionCon a :hover {
+        cursor: pointer; }
+
+@media screen and (min-width: 760px) {
+  .adminCon {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around; } }
 .hidden {
   display: none; }
 
 body {
   background-color: #f2f2f2;
-  box-sizing: border-box; }
+  box-sizing: border-box;
+  width: 100%;
+  height: 100%; }
 
 h2 {
   font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
