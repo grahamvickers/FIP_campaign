@@ -1,12 +1,11 @@
 .formPage{
 
     margin-top: 60px;
-    text-align: center;
+    //text-align: left;
 
     #signupWrap{
         display: flex;
         justify-content: center;
-        margin-left: 40px;
         margin: 80px 80px 40px 80px;
     }
 
@@ -14,13 +13,23 @@
         margin-bottom: 40px;
         background-color: #e4e4e4;
         border-radius: 50px;
+        padding: 30px;
 
-        
+        #line{
+            margin: 0 auto;
+            height: 1px;
+            width: 100%;
+            border-radius: 50px;
+            background-color: #3f3f3f;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
 
         h2{
             text-align: center;
             color: $button-color;
             font-size: 38px;
+            
         }
 
         h3{
@@ -28,18 +37,21 @@
             font-family: 'Poppins Regular', Arial, Helvetica, sans-serif;
         }
 
+        .signupCon{
+            margin: 20px;
+        }
         form{
             display: flex;
             flex-direction: column;
-            align-items: center;
+            align-items: flex-start;
             input{
                 border-radius: 30px; 
                 border-style: none;
                 //border: 2px solid $button-color;
-                padding: 10px;
+                padding: 15px;
                 margin: 10px;
                 font-size: 14px;
-                min-width: 100px;
+                min-width: 240px;
                 text-decoration: none;
                 outline: none;
                 background-color: #f2f2f2;
@@ -62,6 +74,9 @@
             }
             button:hover{
                 cursor: pointer;
+                background-color: #f2f2f2;
+                border: 2px solid $button-color;
+                color: $button-color;
             }
 
             button:active{
@@ -69,6 +84,7 @@
             }
         }
     }
+
 }
 
 
@@ -86,11 +102,24 @@
     transition: .2s ease;
 }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 560px){
+    input{
+        width: 400px;
+    }
+}
+
+
+@media screen and (min-width: 960px) {
+    .formPage{
+        h2{
+            text-align: left;
+            margin-left: 80px;
+        }
+    }
     form{
         input{
             width: 400px;
-            height: 30px;
+            height: 25px;
             font-size: 18px;
         }
     }
@@ -105,26 +134,19 @@
         align-items: center;
         text-align: left;
         padding: 30px;
-    }
-
-    #line{
-        width: 2px;
-        border-radius: 50px;
-        height: 200px;
-        background-color: #3f3f3f;
-        margin-right: 20px;
-        margin-left: 20px;
-    }
-}
-
-@media screen and (min-width: 960px) {
-    form{
-        input{
-            width: 300px;
-            height: 30px;
-        }
-    }
-    .signup{
         max-width: 1400px;
+
+        #lineDesk{
+            width: 2px;
+            //border-radius: 50px;
+            height: 200px;
+            background-color: #3f3f3f;
+            margin-right: 20px;
+            margin-left: 20px;
+        }
+
+        #line{
+            display: none;
+        }
     }
 }

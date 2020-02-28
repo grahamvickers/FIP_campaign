@@ -20,7 +20,7 @@
         <?php include 'templates/header.php'?>
 
         <!-- router-view loads in the vue modules content that is selected from the nav -->
-        <router-view/>
+        <router-view class="mainVue"/>
 
     </main>
         <!-- loading in the php footer template -->

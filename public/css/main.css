@@ -26,17 +26,24 @@ header {
       margin-left: 40px;
       font-family: 'Poppins Bold', Arial, Helvetica, sans-serif; } }
 .formPage {
-  margin-top: 60px;
-  text-align: center; }
+  margin-top: 60px; }
   .formPage #signupWrap {
     display: flex;
     justify-content: center;
-    margin-left: 40px;
     margin: 80px 80px 40px 80px; }
   .formPage .signup {
     margin-bottom: 40px;
     background-color: #e4e4e4;
-    border-radius: 50px; }
+    border-radius: 50px;
+    padding: 30px; }
+    .formPage .signup #line {
+      margin: 0 auto;
+      height: 1px;
+      width: 100%;
+      border-radius: 50px;
+      background-color: #3f3f3f;
+      margin-right: 20px;
+      margin-left: 20px; }
     .formPage .signup h2 {
       text-align: center;
       color: #3936ab;
@@ -44,17 +51,19 @@ header {
     .formPage .signup h3 {
       font-size: 22px;
       font-family: 'Poppins Regular', Arial, Helvetica, sans-serif; }
+    .formPage .signup .signupCon {
+      margin: 20px; }
     .formPage .signup form {
       display: flex;
       flex-direction: column;
-      align-items: center; }
+      align-items: flex-start; }
       .formPage .signup form input {
         border-radius: 30px;
         border-style: none;
-        padding: 10px;
+        padding: 15px;
         margin: 10px;
         font-size: 14px;
-        min-width: 100px;
+        min-width: 240px;
         text-decoration: none;
         outline: none;
         background-color: #f2f2f2; }
@@ -72,7 +81,10 @@ header {
         text-decoration: none;
         color: white; }
       .formPage .signup form button:hover {
-        cursor: pointer; }
+        cursor: pointer;
+        background-color: #f2f2f2;
+        border: 2px solid #3936ab;
+        color: #3936ab; }
       .formPage .signup form button:active {
         text-decoration: none; }
 
@@ -88,10 +100,17 @@ header {
   color: #3936ab;
   transition: .2s ease; }
 
-@media screen and (min-width: 640px) {
+@media screen and (min-width: 560px) {
+  input {
+    width: 400px; } }
+@media screen and (min-width: 960px) {
+  .formPage h2 {
+    text-align: left;
+    margin-left: 80px; }
+
   form input {
     width: 400px;
-    height: 30px;
+    height: 25px;
     font-size: 18px; }
 
   button {
@@ -104,22 +123,16 @@ header {
     justify-content: space-between;
     align-items: center;
     text-align: left;
-    padding: 30px; }
-
-  #line {
-    width: 2px;
-    border-radius: 50px;
-    height: 200px;
-    background-color: #3f3f3f;
-    margin-right: 20px;
-    margin-left: 20px; } }
-@media screen and (min-width: 960px) {
-  form input {
-    width: 300px;
-    height: 30px; }
-
-  .signup {
-    max-width: 1400px; } }
+    padding: 30px;
+    max-width: 1400px; }
+    .signup #lineDesk {
+      width: 2px;
+      height: 200px;
+      background-color: #3f3f3f;
+      margin-right: 20px;
+      margin-left: 20px; }
+    .signup #line {
+      display: none; } }
 .adminCon {
   display: flex;
   flex-direction: column;
@@ -158,6 +171,38 @@ header {
     display: flex;
     flex-direction: row;
     justify-content: space-around; } }
+form {
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  form input {
+    border-radius: 30px;
+    border-style: none;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    min-width: 100px;
+    text-decoration: none;
+    outline: none;
+    background-color: #f2f2f2; }
+  form input:focus {
+    background-color: #3936ab;
+    color: #f2f2f2; }
+  form button {
+    border-radius: 30px;
+    border-style: none;
+    background-color: #3936ab;
+    padding: 10px;
+    margin: 10px;
+    font-size: 14px;
+    width: 150px;
+    text-decoration: none;
+    color: white; }
+  form button:hover {
+    cursor: pointer; }
+  form button:active {
+    text-decoration: none; }
+
 .hidden {
   display: none; }
 
@@ -166,6 +211,9 @@ body {
   box-sizing: border-box;
   width: 100%;
   height: 100%; }
+
+.mainVue {
+  margin: 40px; }
 
 h2 {
   font-family: 'Archivo Black', Arial, Helvetica, sans-serif;

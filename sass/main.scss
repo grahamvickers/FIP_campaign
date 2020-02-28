@@ -6,6 +6,7 @@
 @import 'modules/_header';
 @import 'modules/_form';
 @import 'modules/_adminDashboard';
+@import 'modules/_adminCreate';
 
 
 // any main styling effects
@@ -19,6 +20,10 @@ body{
    box-sizing: border-box;
    width: 100%;
    height: 100%;
+}
+
+.mainVue{
+    margin: 40px;
 }
 
 h2{

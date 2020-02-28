@@ -35,19 +35,20 @@ if(isset($_POST['submit'])){
         <h2>Create a new user</h2>
 
         <?php echo!empty($message)? $message: '';?>
-
         <div>
-            <form action="admin_createuser.php" method="post">
-                <label>First Name</label>
-                <input type="text" name="fname" value="" placeholder=""><br><br>
-                <label>Username</label>
-                <input type="text" name="username" value=""><br><br>
-                <label>Password</label>
-                <input type="text" name="password" value=""><br><br>
-                <label>Email</label>
-                <input type="email" name="email" value=""><br><br>
-                <button name="submit">CREATE USER</button>
-            </form>
+            <div>
+                <form action="admin_createuser.php" method="post">
+
+                    <input type="text" name="fname" value="" placeholder="First Name"><br><br>
+    
+                    <input type="text" name="username" value="" placeholder="Username"><br><br>
+
+                    <input type="text" name="password" value="" placeholder="Password"><br><br>
+
+                    <input type="email" name="email" value="" placeholder="Email"><br><br>
+                    <button name="submit">CREATE USER</button>
+                </form>
+            </div>
         </div>
 
         <?php include '../templates/footerAdmin.php'?>
