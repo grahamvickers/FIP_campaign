@@ -16,10 +16,45 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <h2>Welcome back <?php echo $_SESSION['user_name'];?> how are you?</h2>
+    <main>
+        <?php include '../templates/headerAdmin.php'?>
 
-    <a href="admin_createuser.php">Create User Now</a>
-    <a href="admin_edit.php">Edit Content Now</a>
-    <a href="admin_login.php">SIGN OUT</a>
+        <h2> 
+            <script>
+            var day = new Date();
+            var hr = day.getHours();
+                if (hr <= 12) {
+                document.write("Good morning  <?php echo $_SESSION['user_name'];?>, looks like you need a cup of coffee!");
+                }
+                if (hr <= 16) {
+                document.write("Good afternoon  <?php echo $_SESSION['user_name'];?>, how was lunch?");
+                }
+                if (hr > 17) {
+                document.write("Good evening  <?php echo $_SESSION['user_name'];?>, don't work too late now!");
+                }
+            </script>
+        </h2>
+
+        <div class="adminCon">
+            <div class="optionCon">
+                <img src="../public/images/user.svg" alt="Create user icon">
+                <a href="admin_createuser.php">Create User Now</a>
+            </div>
+
+            <div class="optionCon">
+                <img src="../public/images/edit.svg" alt="Edit content icon">
+                <a href="admin_edit.php">Edit Content Now</a>
+            </div>
+
+            <div class="optionCon">
+                <img src="../public/images/signout.svg" alt="signout icon">
+                <a href="admin_login.php">SIGN OUT</a>
+            </div>
+        </div>
+
+
+        <?php include '../templates/footerAdmin.php'?>
+    </main>
+
 </body>
 </html>

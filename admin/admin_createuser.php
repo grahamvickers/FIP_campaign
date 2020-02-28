@@ -29,19 +29,29 @@ if(isset($_POST['submit'])){
     <title>Create User</title>
 </head>
 <body>
-    <h2>Create a new user</h2>
+    <main>
+        <?php include '../templates/headerAdmin.php'?>
 
-    <?php echo!empty($message)? $message: '';?>
-    <form action="admin_createuser.php" method="post">
-        <label>First Name</label>
-        <input type="text" name="fname" value="" placeholder=""><br><br>
-        <label>Username</label>
-        <input type="text" name="username" value=""><br><br>
-        <label>Password</label>
-        <input type="text" name="password" value=""><br><br>
-        <label>Email</label>
-        <input type="email" name="email" value=""><br><br>
-        <button name="submit">CREATE USER</button>
-    </form>
+        <h2>Create a new user</h2>
+
+        <?php echo!empty($message)? $message: '';?>
+
+        <div>
+            <form action="admin_createuser.php" method="post">
+                <label>First Name</label>
+                <input type="text" name="fname" value="" placeholder=""><br><br>
+                <label>Username</label>
+                <input type="text" name="username" value=""><br><br>
+                <label>Password</label>
+                <input type="text" name="password" value=""><br><br>
+                <label>Email</label>
+                <input type="email" name="email" value=""><br><br>
+                <button name="submit">CREATE USER</button>
+            </form>
+        </div>
+
+        <?php include '../templates/footerAdmin.php'?>
+
+    </main>
 </body>
 </html>

@@ -1,5 +1,5 @@
 ## Redirect
-Redirect 301 /FIP_campaign/load.php /movies_cms
+Redirect 301 /FIP_campaign/load.php /FIP_campaign
 Redirect 301 /load.php /
 
 ## Deny access

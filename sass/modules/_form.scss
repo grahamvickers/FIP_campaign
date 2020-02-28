@@ -35,7 +35,7 @@
             input{
                 border-radius: 30px; 
                 border-style: none;
-                border: 2px solid $button-color;
+                //border: 2px solid $button-color;
                 padding: 10px;
                 margin: 10px;
                 font-size: 14px;
@@ -55,13 +55,17 @@
                 padding: 10px;
                 margin: 10px;
                 font-size: 14px;
-                min-width: 150px;
+                width: 150px;
                 text-decoration: none;
                 color: white;
                 
             }
             button:hover{
                 cursor: pointer;
+            }
+
+            button:active{
+                text-decoration: none;
             }
         }
     }
