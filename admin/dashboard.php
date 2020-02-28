@@ -23,10 +23,10 @@
             <script>
             var day = new Date();
             var hr = day.getHours();
-                if (hr <= 12) {
+                if (hr < 11) {
                 document.write("Good morning  <?php echo $_SESSION['user_name'];?>, looks like you need a cup of coffee!");
                 }
-                if (hr <= 16) {
+                if (hr >= 12) {
                 document.write("Good afternoon  <?php echo $_SESSION['user_name'];?>, how was lunch?");
                 }
                 if (hr > 17) {

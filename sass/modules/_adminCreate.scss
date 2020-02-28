@@ -1,0 +1,40 @@
+form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    input{
+        border-radius: 30px; 
+        border-style: none;
+        //border: 2px solid $button-color;
+        padding: 10px;
+        margin: 10px;
+        font-size: 14px;
+        min-width: 100px;
+        text-decoration: none;
+        outline: none;
+        background-color: #f2f2f2;
+    }
+    input:focus{
+        background-color: $heading-color;
+        color: #f2f2f2;
+    }
+    button{
+        border-radius: 30px; 
+        border-style: none;
+        background-color: $button-color;
+        padding: 10px;
+        margin: 10px;
+        font-size: 14px;
+        width: 150px;
+        text-decoration: none;
+        color: white;
+        
+    }
+    button:hover{
+        cursor: pointer;
+    }
+
+    button:active{
+        text-decoration: none;
+    }
+}

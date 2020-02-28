@@ -13,8 +13,7 @@ function login($username, $password, $ip){
 
     if($user_set->fetchColumn()>0){
         //user exists
-        $get_user_query = 'SELECT * FROM tbl_users WHERE user_name= :username';
-        $get_user_query .= ' AND user_pass = :password';
+        $get_user_query = 'SELECT * FROM tbl_users WHERE user_name= :username AND user_pass = :password';
         $user_check = $pdo->prepare($get_user_query);
         $user_check->execute(
             array(
@@ -39,9 +38,7 @@ function login($username, $password, $ip){
                     ':id'=>$id
                 )
             );
-        }
-
-        if(isset($id)){
+        }if(isset($id)){
             redirect_to('dashboard.php');
         }
     }else{

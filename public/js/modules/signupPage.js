@@ -10,8 +10,8 @@ export default {
                     <p>By signing up you agree to our terms and conditons, you may also unsubscribe at any time.</p>
                 </div>
 
-                <div id="line">
-                </div>
+                <div id="line"></div>
+                <div id="lineDesk"></div>
 
                 <div class="signupCon">
                     <form action="" method="">
@@ -22,7 +22,8 @@ export default {
 
                         <button name="submit">SIGN UP NOW</button>
                     </form>
-                <div>
+                </div>
+            </div>
         </div>
         
     </section>
