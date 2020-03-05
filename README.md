@@ -59,4 +59,9 @@ $ npm i -s mysql
 
 * Big thanks to [Trevor](https://github.com/Trevor-FanshaweC) for teaching us the necessary JS library and it's functions to complete this project.
 
-* Also shoutout to [Pan](https://github.com/spiderPan) for teaching us PHP and helping us understand API's and how to manipulate the data. Aswell as loggin user in and out.
+* Also shoutout to [Pan](https://github.com/spiderPan) for teaching us PHP and helping us understand API's and how to manipulate the data. Aswell as creating a functional CMS.
+
+##License
+
+MIT
+
