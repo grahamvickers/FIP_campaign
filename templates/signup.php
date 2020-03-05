@@ -1,6 +1,6 @@
-export default {
-    template: `
-    <section class="formPage">
+<!-- this is the sign up template -->
+
+<section class="formPage">
         <!-- this is the sign up form -->
         <h2>Sign up and join our mailing list!</h2>
         <div id="signupWrap">
@@ -27,9 +27,3 @@ export default {
         </div>
         
     </section>
-    `,
-
-    created: function() {
-        console.log("Sign Up Page Rendered");
-    }
-}

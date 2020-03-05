@@ -28,8 +28,9 @@
     <title>Admin Login Page</title>
 </head>
 <body>
-    <main>
-        <?php include '../templates/headerAdmin.php'?>
+    <?php include '../templates/headerLogin.php'?>
+    <main id="adminPage">
+
 
         <h2>Admin Login Page</h2>
 
@@ -46,7 +47,7 @@
             </form>
         </div>
 
-        <?php include '../templates/footerAdmin.php'?>
     </main>
+    <?php include '../templates/footerAdmin.php'?>
 </body>
 </html>

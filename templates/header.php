@@ -9,7 +9,7 @@
         <div id="mainNav">
                 <router-link class="route" to="/home">HOME</router-link>
                 <router-link class="route" to="/facts">FACTS</router-link>
-                <router-link class="route" to="/signup">SIGNUP</router-link>
+                <router-link class="route" id="signupBtn" to="/signup">SIGNUP</router-link>
         </div>
     </div>
 </header>

@@ -16,8 +16,8 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <main>
-        <?php include '../templates/headerAdmin.php'?>
+    <?php include '../templates/headerLogin.php'?>
+    <main id="adminPage">
 
         <h2> 
             <script>
@@ -43,7 +43,7 @@
 
             <div class="optionCon">
                 <img src="../public/images/edit.svg" alt="Edit content icon">
-                <a href="admin_edit.php">Edit Content Now</a>
+                <a href="admin_editUser.php">Edit User Now</a>
             </div>
 
             <div class="optionCon">
@@ -52,9 +52,8 @@
             </div>
         </div>
 
-
-        <?php include '../templates/footerAdmin.php'?>
     </main>
-
+    
+    <?php include '../templates/footerAdmin.php'?>
 </body>
 </html>

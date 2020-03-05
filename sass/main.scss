@@ -4,6 +4,7 @@
 @import '_vars';
 @import 'modules/_reset';
 @import 'modules/_header';
+@import 'modules/_content';
 @import 'modules/_form';
 @import 'modules/_adminDashboard';
 @import 'modules/_adminCreate';
@@ -14,12 +15,18 @@
     display: none;
 }
 
+#adminPage{
+    margin: 50px;
+}
+
 body{
    //width: 100%;
    background-color: #f2f2f2;
    box-sizing: border-box;
    width: 100%;
    height: 100%;
+   padding: 0px;
+   margin: 0px; 
 }
 
 .mainVue{

@@ -15,6 +15,12 @@ header {
 #logo {
   width: 50px; }
 
+#signupBtn {
+  color: #f2f2f2;
+  border-radius: 5px;
+  background-color: #3936ab;
+  padding: 15px 25px 15px 25px; }
+
 @media screen and (min-width: 640px) {
   #logo {
     width: 100px; } }
@@ -29,6 +35,8 @@ header {
   margin-top: 60px; }
   .formPage #signupWrap {
     display: flex;
+    flex-direction: column;
+    align-items: flex-start;
     justify-content: center;
     margin: 80px 80px 40px 80px; }
   .formPage .signup {
@@ -56,14 +64,14 @@ header {
     .formPage .signup form {
       display: flex;
       flex-direction: column;
-      align-items: flex-start; }
+      justify-content: center; }
       .formPage .signup form input {
         border-radius: 30px;
         border-style: none;
         padding: 15px;
         margin: 10px;
         font-size: 14px;
-        min-width: 240px;
+        width: 340px;
         text-decoration: none;
         outline: none;
         background-color: #f2f2f2; }
@@ -136,7 +144,9 @@ header {
 .adminCon {
   display: flex;
   flex-direction: column;
-  justify-content: center; }
+  align-items: center; }
+  .adminCon h2 {
+    font-size: 32px; }
   .adminCon .optionCon {
     display: flex;
     flex-direction: column;
@@ -145,7 +155,7 @@ header {
     height: 300;
     width: 250px;
     background-color: #e4e4e4;
-    margin: 40px;
+    margin: 20px;
     padding: 20px;
     border-radius: 20px; }
     .adminCon .optionCon img {
@@ -166,7 +176,7 @@ header {
       .adminCon .optionCon a :hover {
         cursor: pointer; }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 860px) {
   .adminCon {
     display: flex;
     flex-direction: row;
@@ -181,10 +191,11 @@ form {
     padding: 10px;
     margin: 10px;
     font-size: 14px;
-    min-width: 100px;
+    min-width: 240px;
     text-decoration: none;
     outline: none;
-    background-color: #f2f2f2; }
+    background-color: #f2f2f2;
+    border: 2px solid #3936ab; }
   form input:focus {
     background-color: #3936ab;
     color: #f2f2f2; }
@@ -206,11 +217,16 @@ form {
 .hidden {
   display: none; }
 
+#adminPage {
+  margin: 50px; }
+
 body {
   background-color: #f2f2f2;
   box-sizing: border-box;
   width: 100%;
-  height: 100%; }
+  height: 100%;
+  padding: 0px;
+  margin: 0px; }
 
 .mainVue {
   margin: 40px; }
