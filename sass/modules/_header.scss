@@ -20,6 +20,13 @@ header{
     width: 50px;
 }
 
+#signupBtn{
+    color: #f2f2f2;
+    border-radius: 5px;
+    background-color: $heading-color;
+    padding:15px 25px 15px 25px ;
+}
+
 @media screen and (min-width: 640px) {
     #logo{
         width: 100px;

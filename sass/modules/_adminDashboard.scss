@@ -3,7 +3,11 @@
 .adminCon{
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    align-items: center;
+
+    h2{
+        font-size: 32px;
+    }
 
     .optionCon{
         display: flex;
@@ -13,7 +17,7 @@
         height: 300;
         width: 250px;
         background-color: #e4e4e4;
-        margin: 40px;
+        margin: 20px;
         padding: 20px;
         border-radius: 20px;
 
@@ -40,7 +44,7 @@
     }
 }
 
-@media screen and (min-width: 760px) {
+@media screen and (min-width: 860px) {
     .adminCon{
         display: flex;
         flex-direction: row;

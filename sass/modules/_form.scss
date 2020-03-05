@@ -5,6 +5,8 @@
 
     #signupWrap{
         display: flex;
+        flex-direction: column;
+        align-items: flex-start;
         justify-content: center;
         margin: 80px 80px 40px 80px;
     }
@@ -43,7 +45,7 @@
         form{
             display: flex;
             flex-direction: column;
-            align-items: flex-start;
+            justify-content: center;
             input{
                 border-radius: 30px; 
                 border-style: none;
@@ -51,7 +53,7 @@
                 padding: 15px;
                 margin: 10px;
                 font-size: 14px;
-                min-width: 240px;
+                width: 340px;
                 text-decoration: none;
                 outline: none;
                 background-color: #f2f2f2;

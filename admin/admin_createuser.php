@@ -29,8 +29,8 @@ if(isset($_POST['submit'])){
     <title>Create User</title>
 </head>
 <body>
-    <main>
-        <?php include '../templates/headerAdmin.php'?>
+    <?php include '../templates/headerAdmin.php'?>
+    <main id="adminPage">
 
         <h2>Create a new user</h2>
 
@@ -51,8 +51,7 @@ if(isset($_POST['submit'])){
             </div>
         </div>
 
-        <?php include '../templates/footerAdmin.php'?>
-
     </main>
+    <?php include '../templates/footerAdmin.php'?>
 </body>
 </html>

@@ -9,10 +9,11 @@ form{
         padding: 10px;
         margin: 10px;
         font-size: 14px;
-        min-width: 100px;
+        min-width: 240px;
         text-decoration: none;
         outline: none;
         background-color: #f2f2f2;
+        border: 2px solid $heading-color;
     }
     input:focus{
         background-color: $heading-color;

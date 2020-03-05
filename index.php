@@ -23,6 +23,8 @@
         <router-view class="mainVue"/>
 
     </main>
+
+
         <!-- loading in the php footer template -->
         <?php include 'templates/footer.php'?>
         
