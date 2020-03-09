@@ -117,7 +117,7 @@ function getSingleUser($id){
 function editUser($id, $fname, $username, $password, $email){
     $pdo = Database::getInstance()->getConnection();
 
-    $update_user_query = "UPDATE tbl_user SET user_fname = :fname, user_name = :username, user_pass = :password, user_email = :email WHERE user_id= :id";
+    $update_user_query = "UPDATE tbl_user SET user_fname = :fname, user_name = :username, user_pass = :password, user_email = :email WHERE user_id = :id";
     $update_user_set = $pdo->prepare($update_user_query);
     $get_user_result = $update_user_set->execute(
         array(
@@ -129,7 +129,7 @@ function editUser($id, $fname, $username, $password, $email){
         )
     );
 
-    if(!$get_user_result){
+    if($get_user_result){
         redirect_to('dashboard.php');
     }else{
         // user does not exist

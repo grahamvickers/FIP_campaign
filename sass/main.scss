@@ -57,4 +57,36 @@ p{
     font-size: 16px;
 }
 
+a{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: #f2f2f2;
+    font-size: 16px;
+    text-decoration: none;
+    margin: 20px;
+}
+
+#adminNav{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+
+    ul{
+        list-style-type: none;
+        display: flex;
+        flex-direction: row;
+    }
+
+    ul,li,a { 
+        text-decoration: none; 
+        //color: #f2f2f2;
+    }
+
+    a:hover {
+        color: $button-color;
+        transition: ease .3s;
+    }
+}
+
+
 @import 'modules/_footer';

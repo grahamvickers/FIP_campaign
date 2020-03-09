@@ -61,3 +61,26 @@ function logout(){
     session_destroy();
     redirect_to('admin_login.php');
 }
+
+// this will check if the use has been verified or not. Will dictate if user is sent to dashboard or edit
+function user_verification(){
+    $pdo = Database::getInstance()->getConnection();
+
+    //pull the current users row and look if user has been varified their account
+    $user_verif_query = 'SELECT * FROM tbl_user WHERE user_id = :id';
+    $user_verif_set = $pdo->prepare($user_verif_query);
+    $user_verif_set->execute(
+        array(
+            ':id'=>$_SESSION['user_id']
+        )    
+    );
+        // query result 
+        $userVerification = $user_verif_set->fetch(PDO::FETCH_ASSOC);
+
+        // checking if user is verified then continue to dashnoard or not then go to edit user page
+        if($userVerification['user_verif'] == '0'){
+
+            // if not verified yet redirect to the edit page
+            redirect_to('admin_editUser.php');
+        }
+}
