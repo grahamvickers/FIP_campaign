@@ -3,6 +3,9 @@ header {
   header .route {
     font-family: 'Poppins Regular', Arial, Helvetica, sans-serif; }
 
+ul, li, a {
+  text-decoration: none; }
+
 #headCon {
   display: flex;
   flex-direction: row;
@@ -12,8 +15,9 @@ header {
   padding: 10px;
   max-width: 1600px; }
 
-#logo {
-  width: 50px; }
+#logo img {
+  width: 150px;
+  margin: 20px; }
 
 #signupBtn {
   color: #f2f2f2;
@@ -22,8 +26,8 @@ header {
   padding: 15px 25px 15px 25px; }
 
 @media screen and (min-width: 640px) {
-  #logo {
-    width: 100px; } }
+  #logo img {
+    width: 250px; } }
 @media screen and (min-width: 960px) {
   #headCon {
     margin-left: 60px;
@@ -250,6 +254,28 @@ p {
   font-family: 'Poppins', Arial, Helvetica, sans-serif;
   color: #3f3f3f;
   font-size: 16px; }
+
+a {
+  font-family: 'Poppins', Arial, Helvetica, sans-serif;
+  color: #f2f2f2;
+  font-size: 16px;
+  text-decoration: none;
+  margin: 20px; }
+
+#adminNav {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center; }
+  #adminNav ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row; }
+  #adminNav ul, #adminNav li, #adminNav a {
+    text-decoration: none; }
+  #adminNav a:hover {
+    color: #3936ab;
+    transition: ease .3s; }
 
 footer {
   background-color: #3936ab;

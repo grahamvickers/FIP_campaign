@@ -2,6 +2,7 @@
 <?php
     require_once '../load.php';
     confirm_logged_in();
+    user_verification();
 ?>
 
 
@@ -16,7 +17,7 @@
     <title>Admin Dashboard</title>
 </head>
 <body>
-    <?php include '../templates/headerLogin.php'?>
+    <?php include '../templates/headerAdmin.php'?>
     <main id="adminPage">
 
         <h2> 
