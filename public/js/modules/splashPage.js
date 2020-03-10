@@ -18,8 +18,12 @@ export default {
             <h3>First things first…HIV Vs AIDS - What’s the difference?</h3>
             <p>
             HIV is a Virus, AIDS is a Condition.
-            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system. The immune system is unable to work as effectively as it should.
+            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system.
             </p>
+            <div class="seeMore">
+                <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
+                <p>See More</p>
+            </div>
         </div>
 
         <div id="box2">
@@ -27,8 +31,12 @@ export default {
             <h3>First things first…HIV Vs AIDS - What’s the difference?</h3>
             <p>
             HIV is a Virus, AIDS is a Condition.
-            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system. The immune system is unable to work as effectively as it should.
+            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system. 
             </p>
+            <div class="seeMore">
+                <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
+                <p>See More</p>
+            </div>
         </div>
 
         <div id="box3">
@@ -36,8 +44,12 @@ export default {
             <h3>First things first…HIV Vs AIDS - What’s the difference?</h3>
             <p>
             HIV is a Virus, AIDS is a Condition.
-            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system. The immune system is unable to work as effectively as it should.
+            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system.
             </p>
+            <div class="seeMore">
+                <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
+                <p>See More</p>
+            </div>
         </div>
 
         <!-- loading in the php signup template -->
