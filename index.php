@@ -8,6 +8,7 @@
     <title>HIV/AIDS CAMPAIGN</title>
     <link rel="stylesheet" href="public/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans&display=swap" rel="stylesheet">
     <script src="https://unpkg.com/vue"></script>
     <script src="https://unpkg.com/vue-router/dist/vue-router.js"></script>
 </head>
