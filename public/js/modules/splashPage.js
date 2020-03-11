@@ -1,8 +1,22 @@
 export default {
     template: `
     <section>
-        <div id="landing">
-            <img src="./public/images/.jpg" class="landing" alt="landing image" width="100%">
+
+        <div id="section1">
+
+            <div id="welcomeDesk">
+                <div class="welcome">
+                    <h2>Be Educated, Be Kind,<br>Be the Cure</h2>
+                    <h3>#WeAreGenZ</h3>
+                    <button>Get The Facts</button>
+                </div>
+            </div>
+
+            <div id="landing">
+                <img src="./public/images/.jpg" class="landing" alt="landing image" width="100%">
+            </div>
+        
+        
         </div>
 
         <div id="welcome">
@@ -14,6 +28,7 @@ export default {
         </div>
 
         <div id="box1">
+            <div class="boxinside">
             <h2>Be Educated</h2>
             <h3>First things first…HIV Vs AIDS - What’s the difference?</h3>
             <p>
@@ -24,6 +39,10 @@ export default {
                 <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
                 <p>See More</p>
             </div>
+            </div>
+
+            <div class="circleImg1"></div>
+           
         </div>
 
         <div id="box2">

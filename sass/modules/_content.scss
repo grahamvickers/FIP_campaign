@@ -7,6 +7,11 @@
     background-color: #959595;
 }
 
+#welcomeDesk
+{
+    display: none;
+}
+
 #welcome h2
 {
     font-family: 'Open Sans', sans-serif;
@@ -25,6 +30,15 @@
     font-style: thin;
 }
 
+button
+{
+    width: 115px;
+    height: 30px;
+    background-color: #5E5BC7;
+    border-radius: 20px;
+    margin-left: 10px;
+    color: white;
+}
 
 
 // ---------BOXES----------
@@ -33,7 +47,7 @@
 {
     background-color: #FF4A6B;
     height: 267px;
-    border-radius: 20px;
+    border-radius: 50px;
     margin: 10px;
 }
 
@@ -70,7 +84,7 @@
 {
     background-color: #5E5BC7;
     height: 267px;
-    border-radius: 20px;
+    border-radius: 50px;
     margin: 10px;
     margin-top: 40px;
 }
@@ -107,7 +121,7 @@
 {
     background-color: #FF4A6B;
     height: 267px;
-    border-radius: 20px;
+    border-radius: 50px;
     margin: 10px;
     margin-top: 40px;
 }
@@ -157,4 +171,73 @@
 .seeMore p:hover
 {
     color: #5E5BC7;
+}
+
+
+@media screen and (min-width: 640px) {
+
+    
+
+}
+
+@media screen and (min-width: 960px) {
+
+    #welcomeDesk
+    {
+        display: contents;
+    }
+
+    #welcome
+    {
+        display: none;
+    }
+
+    #section1
+    {
+        display: flex;
+        flex-direction: row;
+    }
+
+    .welcome
+    {
+        margin-left: 16%;
+        margin-top: 90px;
+    }
+
+    #landing
+    {
+        width: 40%;
+        margin-right: 10%;
+        margin-bottom: 100px;
+        margin-top: 50px;
+        margin-left: 20%;
+    }
+
+    #box1, #box2, #box3
+    {
+        width: 60%;
+    }
+
+    #box2
+    {
+        float: right;
+        margin-top: 70px;
+    }
+
+    #box3
+    {
+        margin-top: 435px;
+    }
+
+    .circleImg1
+    {
+        height: 200px;
+        width: 200px;
+        border-radius: 50%;
+        background-color: #959595;
+    }
+
+    
+
+
 }
