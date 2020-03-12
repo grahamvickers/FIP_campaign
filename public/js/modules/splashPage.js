@@ -1,24 +1,74 @@
 export default {
     template: `
     <section>
-        <div id="landing">
-            <img src="./public/images/.jpg" alt="yellow condom" width="100%" height="">
+
+        <div id="section1">
+
+            <div id="welcomeDesk">
+                <div class="welcome">
+                    <h2>Be Educated, Be Kind,<br>Be the Cure</h2>
+                    <h3>#WeAreGenZ</h3>
+                    <button>Get The Facts</button>
+                </div>
+            </div>
+
+            <div id="landing">
+                <img src="./public/images/.jpg" class="landing" alt="landing image" width="100%">
+            </div>
+        
+        
         </div>
 
         <div id="welcome">
-            <h2>Our Mission</h2>
-            <h4>Be Educated, Be Kind, Be The Cure.</h4>
-            <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
-            </p>
+            <div class="welcome">
+                <h2>Be Educated, Be Kind,<br>Be the Cure</h2>
+                <h3>#WeAreGenZ</h3>
+                <button>Get The Facts</button>
+            </div>
         </div>
 
-        <div id="stats">
-            <h2>Stats Area</h2>
-            <h4>Secondary heading</h4>
+        <div id="box1">
+            <div class="boxinside">
+            <h2>Be Educated</h2>
+            <h3>First things first…HIV Vs AIDS - What’s the difference?</h3>
             <p>
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+            HIV is a Virus, AIDS is a Condition.
+            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system.
             </p>
+            <div class="seeMore">
+                <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
+                <p>See More</p>
+            </div>
+            </div>
+
+            <div class="circleImg1"></div>
+           
+        </div>
+
+        <div id="box2">
+            <h2>Be Educated</h2>
+            <h3>First things first…HIV Vs AIDS - What’s the difference?</h3>
+            <p>
+            HIV is a Virus, AIDS is a Condition.
+            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system. 
+            </p>
+            <div class="seeMore">
+                <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
+                <p>See More</p>
+            </div>
+        </div>
+
+        <div id="box3">
+            <h2>Be Educated</h2>
+            <h3>First things first…HIV Vs AIDS - What’s the difference?</h3>
+            <p>
+            HIV is a Virus, AIDS is a Condition.
+            HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. Only humans can contract it, and it attacks the immune system.
+            </p>
+            <div class="seeMore">
+                <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
+                <p>See More</p>
+            </div>
         </div>
 
         <!-- loading in the php signup template -->
