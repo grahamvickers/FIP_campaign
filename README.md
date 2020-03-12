@@ -16,9 +16,10 @@ You must have the following programs installed:
 
 You will need to install the following in order to run the website:
 
-To see the sign up function you need to install the .sql file from the 'data' folder, this can be done in the Terminal or through phpMyAdmin. Name the database 'db_ontario'.
+To see the sign up function you need to install the .sql file from the 'data' folder, this can be done in the Terminal or through phpMyAdmin. Create a new database and name it "db_campaign", then import the .sql file from the "data" folder in the project folder.
 
-Install through the command line (required):
+Install the following through the command line (required):
+
 ```
 $ npm i -s express
 $ npm i -s mysql
@@ -51,17 +52,17 @@ $ npm i -s mysql
 ## Authors
 
 * **Graham Vickers** - *Lead Backend & Frontend Developer, Assistant Motion Design* - [Fanshawe College Student](https://github.com/grahamvickers)
-* **Lucas Mastoranni** - *Lead Project Manager, Assistant Backend Developer* - [Fanshawe College Student](https://github.com/lmastroianni)
-* **Adam Goarley** - *Lead Frontend Developer, Assistant Backend Developer* - [Fanshawe College Student](https://github.com/adamgoarley)
-* **Ben Carrillo** - *Lead Design & Branding, Assistant Motion Design* - [Fanshawe College Student](https://github.com/carrillobenjamin)
+* **Lucas Mastoranni** - *Lead Project Manager* - [Fanshawe College Student](https://github.com/lmastroianni)
+* **Adam Goarley** - *Lead Frontend Developer, Assistant Motion Design* - [Fanshawe College Student](https://github.com/adamgoarley)
+* **Ben Carrillo** - *Lead UI/UX Designer & Branding, Assistant Motion Design* - [Fanshawe College Student](https://github.com/carrillobenjamin)
 
 ## Acknowledgments
 
-* Big thanks to [Trevor](https://github.com/Trevor-FanshaweC) for teaching us the necessary JS library and it's functions to complete this project.
+* Big thanks to [Trevor](https://github.com/Trevor-FanshaweC) for teaching us how to use Vue.js and it's functions to complete this project.
 
 * Also shoutout to [Pan](https://github.com/spiderPan) for teaching us PHP and helping us understand API's and how to manipulate the data. Aswell as creating a functional CMS.
 
-##License
+## License
 
 MIT
 
