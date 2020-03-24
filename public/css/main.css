@@ -27,7 +27,7 @@ ul, li, a {
 
 @media screen and (min-width: 640px) {
   #logo img {
-    width: 250px; } }
+    width: 150px; } }
 @media screen and (min-width: 960px) {
   #headCon {
     margin-left: 60px;
@@ -65,37 +65,50 @@ button {
   margin-left: 10px;
   color: white; }
 
+.boxinside {
+  width: 80%;
+  align-self: center; }
+
+.boxinside1 {
+  width: 80%; }
+
+#box1 h2, #box2 h2, #box3 h2 {
+  font-weight: 1000;
+  font-size: 27px; }
+
+#box1 h3, #box2 h3, #box3 h3 {
+  font-weight: 1000;
+  font-size: 16px; }
+
+#box1 p, #box2 p, #box3 p {
+  font-weight: 1000;
+  font-size: 16px; }
+
 #box1 {
   background-color: #FF4A6B;
-  height: 267px;
+  height: 450px;
   border-radius: 50px;
   margin: 10px; }
 
 #box1 h2 {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 28px;
   margin-left: 10px;
   padding-top: 25px; }
 
 #box1 h3 {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 14px;
   margin-left: 10px; }
 
 #box1 p {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 14px;
   margin-left: 10px; }
 
 #box2 {
   background-color: #5E5BC7;
-  height: 267px;
+  height: 450px;
   border-radius: 50px;
   margin: 10px;
   margin-top: 40px; }
@@ -103,28 +116,22 @@ button {
 #box2 h2 {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 28px;
   margin-left: 10px;
   padding-top: 25px; }
 
 #box2 h3 {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 14px;
   margin-left: 10px; }
 
 #box2 p {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 14px;
   margin-left: 10px; }
 
 #box3 {
   background-color: #FF4A6B;
-  height: 267px;
+  height: 450px;
   border-radius: 50px;
   margin: 10px;
   margin-top: 40px; }
@@ -132,23 +139,17 @@ button {
 #box3 h2 {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 28px;
   margin-left: 10px;
   padding-top: 25px; }
 
 #box3 h3 {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 14px;
   margin-left: 10px; }
 
 #box3 p {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-weight: 1000;
-  font-size: 14px;
   margin-left: 10px; }
 
 .seeMore {
@@ -164,7 +165,70 @@ button {
 .seeMore p:hover {
   color: #5E5BC7; }
 
+#section2 h2 {
+  font-family: 'Open Sans', sans-serif;
+  font-size: 26px;
+  margin-left: 20px;
+  margin-top: 80px; }
+
+.infoSquare {
+  width: 90%;
+  height: 450px;
+  background-color: #FF4A6B;
+  text-align: center;
+  margin: auto;
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 22px; }
+
+.infoSquare img {
+  width: 100%;
+  height: 300px; }
+
+.infoSquare2, .infoSquare3 {
+  margin-top: 30px; }
+
+@media screen and (min-width: 640px) {
+  #box1 h2, #box2 h2, #box3 h2 {
+    font-weight: 1000;
+    font-size: 35px; }
+
+  #box1 h3, #box2 h3, #box3 h3 {
+    font-weight: 1000;
+    font-size: 19px; }
+
+  #box1 p, #box2 p, #box3 p {
+    font-weight: 1000;
+    font-size: 19px; } }
 @media screen and (min-width: 960px) {
+  #box1 h2, #box2 h2, #box3 h2 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 40px;
+    margin-left: 10px;
+    padding-top: 50px; }
+
+  #box1 h3, #box2 h3, #box3 h3 {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 22px;
+    margin-left: 10px; }
+
+  #box1 p, #box2 p, #box3 p {
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 1000;
+    font-size: 19px;
+    margin-left: 10px; }
+
+  .seeMore p {
+    margin-top: 0px;
+    font-size: 12px;
+    font-weight: 400;
+    padding-bottom: 10px; }
+
   #welcomeDesk {
     display: contents; }
 
@@ -189,18 +253,65 @@ button {
   #box1, #box2, #box3 {
     width: 60%; }
 
+  .boxinside {
+    margin-left: 30px; }
+
+  .boxinside1 {
+    margin-left: 114px; }
+
+  #box1, #box3 {
+    margin-left: -70px; }
+
   #box2 {
     float: right;
-    margin-top: 70px; }
+    margin-top: 70px;
+    margin-right: -70px; }
 
   #box3 {
-    margin-top: 435px; }
+    margin-top: 77px; }
 
   .circleImg1 {
-    height: 200px;
-    width: 200px;
+    height: 400px;
+    width: 400px;
     border-radius: 50%;
-    background-color: #959595; } }
+    background-color: #959595;
+    margin-left: 6%;
+    margin-top: 40px; }
+
+  .circleImg {
+    margin-top: 85px; }
+
+  #box1Wrapper {
+    display: flex;
+    flex-direction: row; }
+
+  #box2Wrapper {
+    display: flex;
+    flex-direction: row-reverse; }
+
+  .circleImg2 {
+    height: 400px;
+    width: 400px;
+    border-radius: 50%;
+    background-color: #959595;
+    margin-right: 6%;
+    margin-top: 100px; }
+
+  #squareWrapper {
+    display: flex;
+    flex-direction: row;
+    width: 85%;
+    margin: auto; }
+
+  #section2 h2 {
+    text-align: center;
+    font-size: 40px; }
+
+  #section2 h3 {
+    font-size: 22px; }
+
+  .infoSquare2, .infoSquare3 {
+    margin-top: 0px; } }
 .formPage {
   margin-top: 60px; }
   .formPage #signupWrap {
@@ -452,6 +563,7 @@ a{
     transition: ease .3s; }
 
 footer {
+  margin-top: 1200px;
   background-color: #3936ab;
   padding: 30px; }
   footer div {
