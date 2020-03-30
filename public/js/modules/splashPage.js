@@ -128,6 +128,26 @@ export default {
 
         </div>
 
+        <div id="questionsForm">
+            <div id="text">
+                <h2>Have any questions or concerns?</h2>
+                <p>Unsure, scared, embarrassed? It’s okay, we’re here for you. Ask us anything.</p>
+            </div>
+
+            <div id="formBox">
+                <form action="#">
+                    <label class="formTxt" for="fname">Name</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                    <label for="fname">Email</label><br>
+                        <input type="text" id="fname" name="fname"><br>
+                    <label for="lname">Question</label><br>
+                        <input type="text" id="lname" name="lname"><br><br>
+                    <input class="submit" type="submit" value="Submit">
+                    
+                </form> 
+            </div>
+        </div>
+
 
 
         <!-- loading in the php signup template -->
