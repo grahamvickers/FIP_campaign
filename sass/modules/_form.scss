@@ -13,7 +13,7 @@
     font-family: 'Open Sans', sans-serif;
     font-weight: 800;
     font-size: 22px;
-    padding-top: 30px;
+    padding-top: 40px;
     margin-left: 15px;
 }
 
@@ -31,12 +31,12 @@
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 13px;
-    padding-top: 10px;
+    // padding-top: 30px;
 }
 
 .formTxt
 {
-    padding-top: 20px;
+    padding-top: 40px;
 }
 
 #questionsForm input
@@ -56,4 +56,5 @@
 .submit
 {
     width: 40%;
+    background-color: #FF4A6B;
 }

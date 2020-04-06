@@ -129,6 +129,7 @@ export default {
         </div>
 
         <div id="questionsForm">
+
             <div id="text">
                 <h2>Have any questions or concerns?</h2>
                 <p>Unsure, scared, embarrassed? It’s okay, we’re here for you. Ask us anything.</p>
@@ -136,18 +137,31 @@ export default {
 
             <div id="formBox">
                 <form action="#">
-                    <label class="formTxt" for="fname">Name</label><br>
+                    <label class="lab" class="formTxt" for="fname">Name</label><br>
                         <input type="text" id="fname" name="fname"><br>
-                    <label for="fname">Email</label><br>
+                    <label class="lab" for="fname">Email</label><br>
                         <input type="text" id="fname" name="fname"><br>
-                    <label for="lname">Question</label><br>
+                    <label class="lab" for="lname">Question</label><br>
                         <input type="text" id="lname" name="lname"><br><br>
                     <input class="submit" type="submit" value="Submit">
-                    
                 </form> 
             </div>
+
         </div>
 
+        <div id="facts">
+
+            <div id="graphic">
+                <img src="./public/images/signout.svg" class="" alt="" height="300px" width="">
+            </div>
+
+            <div id="fact">
+                <p>1 in 4 of of all new HIV infections are between ages 13 and 24</p>
+                <p>1 in 7 people who have AIDS are not aware of their condition</p>
+                <p>7.9 million people across the globe with HIV/AIDS in 2018</p>
+            </div>
+
+        </div>
 
 
         <!-- loading in the php signup template -->

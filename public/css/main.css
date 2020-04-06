@@ -188,6 +188,21 @@ button {
 .infoSquare2, .infoSquare3 {
   margin-top: 30px; }
 
+#facts p {
+  margin: auto; }
+
+#facts p {
+  border: 3px solid;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  border-radius: 8px;
+  text-align: center;
+  width: 80%;
+  margin-top: 40px; }
+
+#graphic {
+  margin-left: 10%; }
+
 @media screen and (min-width: 640px) {
   #box1 h2, #box2 h2, #box3 h2 {
     font-weight: 1000;
@@ -311,7 +326,41 @@ button {
     font-size: 22px; }
 
   .infoSquare2, .infoSquare3 {
-    margin-top: 0px; } }
+    margin-top: 0px; }
+
+  #questionsForm {
+    display: flex;
+    flex-direction: row; }
+
+  #text, #formBox {
+    justify-content: space-evenly;
+    width: 45%;
+    margin: auto;
+    margin-top: 98px; }
+
+  #formBox input {
+    margin-top: 5px; }
+
+  #formBox label {
+    margin-top: 20px; }
+
+  .lab {
+    padding-bottom: 20px;
+    margin-bottom: 20px; }
+
+  #facts p {
+    width: 80%; }
+
+  #facts {
+    display: flex;
+    flex-direction: row;
+    margin-top: 100px; }
+
+  #fact, #graphic {
+    justify-content: space-between; }
+
+  #fact {
+    margin-left: 100px; } }
 #questionsForm {
   height: 415px;
   width: 90%;
@@ -324,7 +373,7 @@ button {
   font-family: 'Open Sans', sans-serif;
   font-weight: 800;
   font-size: 22px;
-  padding-top: 30px;
+  padding-top: 40px;
   margin-left: 15px; }
 
 #questionsForm p {
@@ -337,11 +386,10 @@ button {
 #questionsForm label {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  font-size: 13px;
-  padding-top: 10px; }
+  font-size: 13px; }
 
 .formTxt {
-  padding-top: 20px; }
+  padding-top: 40px; }
 
 #questionsForm input {
   background-color: #514EAF;
@@ -354,7 +402,8 @@ button {
   margin-left: 15px; }
 
 .submit {
-  width: 40%; }
+  width: 40%;
+  background-color: #FF4A6B; }
 
 .adminCon {
   display: flex;
