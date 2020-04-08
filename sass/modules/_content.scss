@@ -12,6 +12,11 @@
     display: none;
 }
 
+#welcome
+{
+    margin-left: 20%;
+}
+
 #welcome h2
 {
     font-family: 'Open Sans', sans-serif;
@@ -47,6 +52,8 @@ button
     {
         width: 80%;
         align-self: center;
+        margin-left: 40px;
+        margin-top: -18px;
     }
 
 .boxinside1
@@ -57,25 +64,26 @@ button
     #box1 h2,#box2 h2,#box3 h2
     {
         font-weight: 1000;
-        font-size: 27px;
+        font-size: 30px;
     }
     
     #box1 h3,#box2 h3,#box3 h3
     {
         font-weight: 1000;
-        font-size: 16px;
+        font-size: 18px;
     }
     
     #box1 p,#box2 p,#box3 p
     {
         font-weight: 1000;
-        font-size: 16px;
+        font-size: 18px;
     }
 
 #box1
 {
     background-color: #FF4A6B;
-    height: 450px;
+    // height: 760px;
+    min-height:100px;
     border-radius: 50px;
     margin: 10px;
 }
@@ -84,7 +92,6 @@ button
 {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 10px;
     padding-top: 25px;
 }
 
@@ -92,21 +99,22 @@ button
 {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 10px;
+    
 }
 
 #box1 p
 {
     color: white;
     font-family: 'Open Sans', sans-serif;
-    margin-left: 10px;
+    padding-bottom: 30px;
 }
 
 
 #box2
 {
     background-color: #5E5BC7;
-    height: 450px;
+    // height: 640px;
+    min-height:100px;
     border-radius: 50px;
     margin: 10px;
     margin-top: 40px;
@@ -132,12 +140,14 @@ button
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin-left: 10px;
+    padding-bottom: 30px;
 }
 
 #box3
 {
     background-color: #FF4A6B;
-    height: 450px;
+    // height: 520px;
+    min-height:100px;
     border-radius: 50px;
     margin: 10px;
     margin-top: 40px;
@@ -163,12 +173,14 @@ button
     color: white;
     font-family: 'Open Sans', sans-serif;
     margin-left: 10px;
+    padding-bottom: 30px;
 }
 
 .seeMore
 {
-    display: flex;
-    margin-left: 15px; 
+    // display: flex;
+    display: none;
+    
 }
 
 .seeMore p
@@ -236,6 +248,48 @@ button
     margin-left: 10%;
 }
 
+#social
+{
+
+
+}
+
+#graphicText h2
+{
+    text-align: center;
+    margin-top: 80px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 25px;
+}
+
+#graphicText2 p
+{
+    text-align: center;
+    margin-top: 10px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+}
+
+#socialGraphics
+{
+    display: flex;
+    flex-direction: row;
+    margin-left: auto;
+}
+
+#graphic1, #graphic2, #graphic3
+{
+    height: 50px;
+    width: 50px;
+    background-color: green;
+    justify-content: space-around;
+    padding-right: 20px;
+}
+
+
+
 
 @media screen and (min-width: 640px) {
 
@@ -256,8 +310,6 @@ button
         font-weight: 1000;
         font-size: 19px;
     }
-
-    
 
 }
 
@@ -476,8 +528,26 @@ button
         margin-left: 100px;
     }
 
-    
+    #mailingList
+    {
+        display: flex;
+        flex-direction: row;
+    }
 
+    #text2
+    {
+        justify-content: space-evenly;
+        width: 45%;
+        margin: auto;
+        margin-top: 0px;
+    }
 
+    #formBox2
+    {
+        justify-content: space-evenly;
+        width: 45%;
+        margin: auto;
+        margin-top: 40px;
+    }
 
 }

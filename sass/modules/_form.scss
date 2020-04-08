@@ -57,4 +57,75 @@
 {
     width: 40%;
     background-color: #FF4A6B;
+    margin-top: 15px;
+}
+
+.lab // ---------------not working!!! --------------
+{
+    margin-top: 10px;
+}
+
+#mailingList
+{
+    height: 315px;
+    width: 90%;
+    background-color: #FF4A6B;
+    margin: auto;
+    margin-top: 60px;
+}
+
+#mailingList h2
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 800;
+    font-size: 22px;
+    padding-top: 40px;
+    margin-left: 15px;
+}
+
+#mailingList p
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 400;
+    font-size: 13px;
+    margin-left: 15px;
+}
+
+#mailingList label
+{
+    color: white;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 13px;
+    // padding-top: 30px;
+}
+
+.formTxt
+{
+    padding-top: 40px;
+}
+
+#mailingList input
+{
+    background-color: rgb(255, 51, 88);
+    border-radius: 4px;
+    border: none;
+    width: 90%;
+    height: 30px;
+}
+
+#formBox2
+{
+    margin-left: 15px;
+}
+
+
+@media screen and (min-width: 960px) {
+
+    #mailingList
+    {
+        height: 215px;
+    }
+
 }

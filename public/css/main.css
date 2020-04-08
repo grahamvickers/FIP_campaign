@@ -1,10 +1,11 @@
 header {
-  background-color: #ff4a6b; }
+  background-color: #f2f2f2; }
   header .route {
     font-family: 'Poppins Regular', Arial, Helvetica, sans-serif; }
 
 ul, li, a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 #headCon {
   display: flex;
@@ -17,13 +18,14 @@ ul, li, a {
 
 #logo img {
   width: 150px;
+  height: 80px;
   margin: 20px; }
 
 #signupBtn {
   color: #f2f2f2;
-  border-radius: 5px;
+  border-radius: 15px;
   background-color: #3936ab;
-  padding: 15px 25px 15px 25px; }
+  padding: 5px 25px 5px 25px; }
 
 @media screen and (min-width: 640px) {
   #logo img {
@@ -34,7 +36,8 @@ ul, li, a {
     margin-right: 60px; }
     #headCon .route {
       margin-left: 40px;
-      font-family: 'Poppins Bold', Arial, Helvetica, sans-serif; } }
+      font-family: 'Open Sans', sans-serif;
+      font-weight: 200; } }
 #landing {
   height: 290px;
   width: 100%;
@@ -42,6 +45,9 @@ ul, li, a {
 
 #welcomeDesk {
   display: none; }
+
+#welcome {
+  margin-left: 20%; }
 
 #welcome h2 {
   font-family: 'Open Sans', sans-serif;
@@ -67,48 +73,48 @@ button {
 
 .boxinside {
   width: 80%;
-  align-self: center; }
+  align-self: center;
+  margin-left: 40px;
+  margin-top: -18px; }
 
 .boxinside1 {
   width: 80%; }
 
 #box1 h2, #box2 h2, #box3 h2 {
   font-weight: 1000;
-  font-size: 27px; }
+  font-size: 30px; }
 
 #box1 h3, #box2 h3, #box3 h3 {
   font-weight: 1000;
-  font-size: 16px; }
+  font-size: 18px; }
 
 #box1 p, #box2 p, #box3 p {
   font-weight: 1000;
-  font-size: 16px; }
+  font-size: 18px; }
 
 #box1 {
   background-color: #FF4A6B;
-  height: 450px;
+  min-height: 100px;
   border-radius: 50px;
   margin: 10px; }
 
 #box1 h2 {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 10px;
   padding-top: 25px; }
 
 #box1 h3 {
   color: white;
-  font-family: 'Open Sans', sans-serif;
-  margin-left: 10px; }
+  font-family: 'Open Sans', sans-serif; }
 
 #box1 p {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 10px; }
+  padding-bottom: 30px; }
 
 #box2 {
   background-color: #5E5BC7;
-  height: 450px;
+  min-height: 100px;
   border-radius: 50px;
   margin: 10px;
   margin-top: 40px; }
@@ -127,11 +133,12 @@ button {
 #box2 p {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding-bottom: 30px; }
 
 #box3 {
   background-color: #FF4A6B;
-  height: 450px;
+  min-height: 100px;
   border-radius: 50px;
   margin: 10px;
   margin-top: 40px; }
@@ -150,11 +157,11 @@ button {
 #box3 p {
   color: white;
   font-family: 'Open Sans', sans-serif;
-  margin-left: 10px; }
+  margin-left: 10px;
+  padding-bottom: 30px; }
 
 .seeMore {
-  display: flex;
-  margin-left: 15px; }
+  display: none; }
 
 .seeMore p {
   margin-top: 0px;
@@ -202,6 +209,32 @@ button {
 
 #graphic {
   margin-left: 10%; }
+
+#graphicText h2 {
+  text-align: center;
+  margin-top: 80px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 25px; }
+
+#graphicText2 p {
+  text-align: center;
+  margin-top: 10px;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: bold;
+  font-size: 18px; }
+
+#socialGraphics {
+  display: flex;
+  flex-direction: row;
+  margin-left: auto; }
+
+#graphic1, #graphic2, #graphic3 {
+  height: 50px;
+  width: 50px;
+  background-color: green;
+  justify-content: space-around;
+  padding-right: 20px; }
 
 @media screen and (min-width: 640px) {
   #box1 h2, #box2 h2, #box3 h2 {
@@ -360,7 +393,23 @@ button {
     justify-content: space-between; }
 
   #fact {
-    margin-left: 100px; } }
+    margin-left: 100px; }
+
+  #mailingList {
+    display: flex;
+    flex-direction: row; }
+
+  #text2 {
+    justify-content: space-evenly;
+    width: 45%;
+    margin: auto;
+    margin-top: 0px; }
+
+  #formBox2 {
+    justify-content: space-evenly;
+    width: 45%;
+    margin: auto;
+    margin-top: 40px; } }
 #questionsForm {
   height: 415px;
   width: 90%;
@@ -403,8 +452,55 @@ button {
 
 .submit {
   width: 40%;
-  background-color: #FF4A6B; }
+  background-color: #FF4A6B;
+  margin-top: 15px; }
 
+.lab {
+  margin-top: 10px; }
+
+#mailingList {
+  height: 315px;
+  width: 90%;
+  background-color: #FF4A6B;
+  margin: auto;
+  margin-top: 60px; }
+
+#mailingList h2 {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 800;
+  font-size: 22px;
+  padding-top: 40px;
+  margin-left: 15px; }
+
+#mailingList p {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-weight: 400;
+  font-size: 13px;
+  margin-left: 15px; }
+
+#mailingList label {
+  color: white;
+  font-family: 'Open Sans', sans-serif;
+  font-size: 13px; }
+
+.formTxt {
+  padding-top: 40px; }
+
+#mailingList input {
+  background-color: #ff3358;
+  border-radius: 4px;
+  border: none;
+  width: 90%;
+  height: 30px; }
+
+#formBox2 {
+  margin-left: 15px; }
+
+@media screen and (min-width: 960px) {
+  #mailingList {
+    height: 215px; } }
 .adminCon {
   display: flex;
   flex-direction: column;
@@ -513,17 +609,42 @@ a{
     transition: ease .3s; }
 
 footer {
-  margin-top: 1200px;
-  background-color: #3936ab;
-  padding: 30px; }
+  margin-top: 140px;
+  background-color: #2C2C2C;
+  padding-top: 30px;
+  padding-bottom: 30px;
+  width: 100%; }
   footer div {
     display: flex;
     flex-direction: row;
     justify-content: space-between; }
     footer div p {
-      color: #efcc4f;
-      font-size: 12px; }
+      color: #ffffff;
+      font-size: 12px;
+      text-align: center;
+      margin: auto;
+      width: 90%; }
   footer img {
     width: 50px; }
+
+#footerNav {
+  display: flex;
+  flex-direction: row;
+  text-decoration: none;
+  width: 300px;
+  margin: auto;
+  padding-bottom: 20px; }
+
+#footerNav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: row; }
+
+#footerNav a {
+  font-size: 20px;
+  color: white;
+  padding-left: 35px; }
 
 /*# sourceMappingURL=main.css.map */
