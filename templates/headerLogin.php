@@ -1,7 +1,7 @@
 <!-- this is the header template -->
 
 <header>
-    <div id="headCon">
+    <div id="mainHeader">
         <h2 class="hidden">Header Area</h2>
         <div id="logo">
            <img src="../public/images/tt_logo.svg" alt="Company Logo">

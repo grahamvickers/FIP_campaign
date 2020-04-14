@@ -6,6 +6,8 @@
 @import 'modules/_header';
 @import 'modules/_content';
 @import 'modules/_form';
+@import 'modules/_table';
+@import 'modules/_adminHeader';
 @import 'modules/_adminDashboard';
 @import 'modules/_adminCreate';
 
@@ -33,7 +35,7 @@ body{
     margin: 0px;
 }
 
-/* 
+
 
 h2{
     font-family: 'Archivo Black', Arial, Helvetica, sans-serif;
@@ -67,7 +69,6 @@ a{
     margin: 20px;
 }
 
-*/
 
 #adminNav{
     display: flex;

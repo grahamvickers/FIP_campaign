@@ -13,7 +13,7 @@ export default {
             </div>
 
             <div id="landing">
-                <img src="./public/images/.jpg" class="landing" alt="landing image" width="100%">
+                <img src="./public/images/banner.jpg" class="landing" alt="landing image" width="100%">
             </div>
         
         </div>
@@ -36,13 +36,13 @@ export default {
                 HIV is a Virus, AIDS is a Condition. HIV is a virus that can lead to immune system deterioration. The term “HIV” stands for human immunodeficiency virus. The name describes the virus: Only humans can contract it, and it attacks the immune system. As a result, the immune system is unable to work as effectively as it should. Contracting HIV can lead to the development of AIDS. AIDS is a chronic, potentially life-threatening condition caused by HIV. It develops when HIV has caused serious damage to the immune system. Certain types of cancer become more likely when an immune system works less effectively as well. AIDS HIV education can help us to not only develop and maintain safer behaviours, but also reduce stigma and discrimination towards people affected by, and living with, HIV.
             </p>
             <div class="seeMore">
-                <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
-                <p>See More</p>
+                 <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
             </div>
             </div>   
         </div>
 
             <div class="circleImg1">
+                <img src="./public/images/doctor.svg" alt="Hearts image">
             </div>
 
         </div>
@@ -55,18 +55,18 @@ export default {
             <h2>Be Kind</h2>
             <p>
                 So how do we reduce stigma, discrimination around AIDS and other STI’s? If each of us commits to making positive changes in our families and communities, we can help end HIV stigma and work to stop HIV together. It is crucial to be informed not ignorant.  Here are some ways you can reduce the stigma:<br>
-                <br><br> - Support everyone - treat others with dignity and respect
-                <br><br> - Pass on the facts and challenge the myths
-                <br><br> - Choose your words carefully the way we speak can affect the attitudes of others
+                <br><br>• Support everyone - treat others with dignity and respect
+                <br><br>• Pass on the facts and challenge the myths
+                <br><br>• Choose your words carefully the way we speak can affect the attitudes of others
             </p>
             <div class="seeMore">
                 <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
-                <p>See More</p>
             </div>
             </div>   
         </div>
 
             <div class="circleImg2">
+                <img src="./public/images/hearts.svg" alt="landing image">
             </div>
 
         </div>
@@ -82,12 +82,12 @@ export default {
             </p>
             <div class="seeMore">
                 <img src="./public/images/seemore.svg" class="seeMoreIcon" alt="landing image" height="20px" width="15px">
-                <p>See More</p>
             </div>
             </div>   
         </div>
 
             <div class="circleImg1 circleImg">
+                <img src="./public/images/love.svg" alt="Thinking image">
             </div>
 
         </div>
@@ -96,7 +96,7 @@ export default {
 
         <div id="section2">
 
-            <h2>Get Tested Today</h2>
+            <h2>Local Testing Centers</h2>
 
             <div id="squareWrapper">
             <div id="infoSquares">
@@ -150,7 +150,7 @@ export default {
         <div id="facts">
 
             <div id="graphic">
-                <img src="./public/images/signout.svg" class="" alt="" height="300px" width="">
+                <img src="./public/images/know.svg" class="" alt="" height="300px" >
             </div>
 
             <div id="fact">
@@ -168,9 +168,17 @@ export default {
             </div>
 
             <div id="socialGraphics">
-                <div id="graphic1"></div>
-                <div id="graphic2"></div>
-                <div id="graphic3"></div>
+                <div id="graphic1">
+                    <img src="./public/images/instagram.svg" alt="Instagram Logo">
+                </div>
+
+                <div id="graphic2">
+                    <img src="./public/images/youtube.svg" alt="Instagram Logo">                
+                </div>
+                
+                <div id="graphic3">
+                    <img src="./public/images/facebook.svg" alt="Instagram Logo">
+                </div>
             </div>
 
             <div id="graphicText2">
