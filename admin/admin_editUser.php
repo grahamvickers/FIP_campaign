@@ -2,6 +2,7 @@
     require_once '../load.php';
     confirm_logged_in();
 
+
     $id = $_SESSION['user_id'];
     $user = getSingleUser($id);
 
@@ -15,7 +16,7 @@
         $password = trim($_POST['password']);
         $email = trim($_POST['email']);
 
-        $messaghe = editUser($id, $fname, $username, $password, $email);
+        $message = editUser($id, $fname, $username, $password, $email);
     }
 ?>
 
@@ -30,33 +31,28 @@
         <title>Edit User</title>
     </head>
     <body>
-
         <?php include '../templates/headerAdmin.php'?>
-        <main id="adminPage">
-            <h2>Edit User Information</h2>
-            <?php echo !empty($message)? $message : '';?>
-            <div>
-                <div>
-                    <form action="admin_editUser.php" method="post">
 
-                        <?php while($info=$user->fetch(PDO::FETCH_ASSOC)):?>
+        <h2>Edit User Information</h2>
+        <?php echo !empty($message)? $message : '';?>
+            <div id="adminForm">
+                <form action="admin_editUser.php" method="post">
 
-                        <input type="text" name="fname" value="<?php echo $info['user_fname'];?>" placeholder="Full Name">
+                    <?php while($info=$user->fetch(PDO::FETCH_ASSOC)):?>
 
-                        <input type="text" name="username" value="<?php echo $info['user_name'];?>" placeholder="Username">
-                        
-                        <input type="text" name="password" value="<?php echo $info['user_pass'];?>" placeholder="Password">
+                    <input type="text" name="fname" value="<?php echo $info['user_fname'];?>" placeholder="Full Name">
 
-                        <input type="text" name="email" value="<?php echo $info['user_email'];?>" placeholder="Email">
-                        
-                        <?php endwhile?>
-                        <button type="submit" name="submit">SAVE CHANGES</button>
+                    <input type="text" name="username" value="<?php echo $info['user_name'];?>" placeholder="Username">
+                    
+                    <input type="text" name="password" value="<?php echo $info['user_pass'];?>" placeholder="Password">
 
-                    </form>
-                </div>
+                    <input type="text" name="email" value="<?php echo $info['user_email'];?>" placeholder="Email">
+                    
+                    <?php endwhile?>
+                    <button type="submit" name="submit">SAVE CHANGES</button>
+
+                </form>
             </div>
-        </main>
-        
-        <?php include '../templates/footerAdmin.php'?>
+        <?php include '../templates/footerAdmin.php'; ?>
     </body>
 </html>

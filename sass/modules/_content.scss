@@ -4,7 +4,7 @@
 {
     height: 290px;
     width: 100%;
-    background-color: #959595;
+    // background-color: #959595;
 }
 
 #welcomeDesk
@@ -15,6 +15,7 @@
 #welcome
 {
     margin-left: 20%;
+    margin-bottom: 40px;
 }
 
 #welcome h2
@@ -37,12 +38,14 @@
 
 button
 {
-    width: 115px;
-    height: 30px;
-    background-color: #5E5BC7;
-    border-radius: 20px;
+    // width: 115px;
+    // height: 40px;
+    background-color: $button-color;
+    padding: 12px 22px;
+    border-radius: 50px;
     margin-left: 10px;
     color: white;
+    font-size: 16px;
 }
 
 
@@ -107,6 +110,18 @@ button
     color: white;
     font-family: 'Open Sans', sans-serif;
     padding-bottom: 30px;
+}
+.circleImg1 img
+{
+display: none;
+}
+.circleImg2 img
+{
+display: none;
+}
+.circleImg3 img
+{
+display: none;
 }
 
 
@@ -183,18 +198,18 @@ button
     
 }
 
-.seeMore p
-{
-    margin-top: 0px;
-    font-size: 12px;
-    font-weight: 400;
-    padding-bottom: 10px;
-}
+// .seeMore p
+// {
+//     margin-top: 0px;
+//     font-size: 12px;
+//     font-weight: 400;
+//     padding-bottom: 10px;
+// }
 
-.seeMore p:hover
-{
-    color: #5E5BC7;
-}
+// .seeMore p:hover
+// {
+//     color: #5E5BC7;
+// }
 
 #section2 h2
 {
@@ -248,9 +263,11 @@ button
     margin-left: 10%;
 }
 
-#social
-{
-
+#social{
+// social icons
+img{
+    width: 50px;
+}
 
 }
 
@@ -276,14 +293,13 @@ button
 {
     display: flex;
     flex-direction: row;
-    margin-left: auto;
+    justify-content: center;
 }
 
 #graphic1, #graphic2, #graphic3
 {
     height: 50px;
     width: 50px;
-    background-color: green;
     justify-content: space-around;
     padding-right: 20px;
 }
@@ -348,8 +364,11 @@ button
 {
     margin-top: 0px;
     font-size: 12px;
-    font-weight: 400;
+
     padding-bottom: 10px;
+}
+.seeMore{
+    display: contents;
 }
 
     #welcomeDesk
@@ -415,13 +434,12 @@ button
         margin-top: 77px;  
     }
 
-    .circleImg1
+    .circleImg1 img
     {
-        height: 400px;
+        display: block;
+        align-items: center;
         width: 400px;
-        border-radius: 50%;
-        background-color: #959595; 
-        margin-left: 6%;  
+        margin-left: 15%;  
         margin-top: 40px;
     }
 
@@ -433,22 +451,23 @@ button
     #box1Wrapper
     {
         display: flex;
-        flex-direction: row;
+        flex-direction: row; 
+        align-items: center;
     }
 
     #box2Wrapper
     {
         display: flex;
         flex-direction: row-reverse;
+        align-items: center;
     }
 
-    .circleImg2
+    .circleImg2 img
     {
-        height: 400px;
+        display: block;
+        align-items: center;
         width: 400px;
-        border-radius: 50%;
-        background-color: #959595; 
-        margin-right: 6%; 
+        margin-right: 100px;  
         margin-top: 100px;
     }
 

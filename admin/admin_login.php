@@ -25,29 +25,23 @@
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <link rel="stylesheet" href="../public/css/main.css">
     <link href="https://fonts.googleapis.com/css?family=Archivo+Black|Poppins&display=swap" rel="stylesheet">
-    <title>Admin Login Page</title>
+    <title>Admin Login</title>
 </head>
 <body>
-    <?php include '../templates/headerLogin.php'?>
-    <main id="adminPage">
+    <h2>Login Page</h2>
+    <?php echo !empty($message)? $message: ''; ?>
+    <div id="adminForm">
+        <form action="admin_login.php" method="post">
+            <label for="">Username:</label>
+            <input type="text" name="username" id="username" value="" placeholder="Knock knock, whos there?">
 
+            <label for="">Password:</label>
+            <input type="password" name="password" id="password" value="" placeholder="Your secret is safe with me;)">
 
-        <h2>Admin Login Page</h2>
+            <button name="submit">Submit</button>
+        </form>
+    </div>
 
-        <?php echo !empty($message)? $message: ''; ?>
-
-        <div class="formPage">
-            <form class="adminForm" action="admin_login.php" method="post">
-                <div id="signupWrap">
-                    <input type="text" name="username" value="" placeholder="Your username.." required>
-                    <input type="password" name="password" value="" placeholder="And your password.." required>
-
-                    <button name="submit">Submit</button>
-                </div>
-            </form>
-        </div>
-
-    </main>
     <?php include '../templates/footerAdmin.php'?>
 </body>
 </html>

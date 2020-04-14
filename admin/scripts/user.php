@@ -58,8 +58,8 @@ function createUser($fname, $username, $email){
     ------------------------<br>
 
     Email: '.$username.'<br><br>
-    Password: '.$password.'<br>
-
+    Password: '.$password.'<br><br>
+    * Note: if you do not sign in with these credentials within 24 hours of recieving this email, your account will be deactivated
     ------------------------<br>
     To log in, please visit http://localhost:8010/admin/admin_login.php
     <br><br><br>
@@ -76,7 +76,7 @@ function createUser($fname, $username, $email){
         // this will run if the mail could be sent
 
         // this will create the user in the db
-        $create_user_query = 'INSERT INTO tbl_user (user_fname, user_name, user_pass, user_email, user_ip) VALUES (:fname, :username, :password, :email, "no")';
+        $create_user_query = 'INSERT INTO tbl_user (user_fname, user_name, user_pass, user_email, user_ip, user_verif) VALUES (:fname, :username, :password, :email, "no", "0")';
         $create_user_set = $pdo->prepare($create_user_query);
         $create_user_set->execute(
             array(
@@ -88,7 +88,7 @@ function createUser($fname, $username, $email){
         );
 
         // if everything ran right user will be rediirected back to the index
-        redirect_to('dashboard.php');
+        redirect_to('index.php');
         $message = 'User successfuly created!';
     }  
   }
@@ -117,7 +117,7 @@ function getSingleUser($id){
 function editUser($id, $fname, $username, $password, $email){
     $pdo = Database::getInstance()->getConnection();
 
-    $update_user_query = "UPDATE tbl_user SET user_fname = :fname, user_name = :username, user_pass = :password, user_email = :email WHERE user_id = :id";
+    $update_user_query = "UPDATE tbl_user SET user_fname = :fname, user_name = :username, user_pass = :password, user_email = :email, user_verif = 1 WHERE user_id= :id";
     $update_user_set = $pdo->prepare($update_user_query);
     $get_user_result = $update_user_set->execute(
         array(
@@ -130,9 +130,41 @@ function editUser($id, $fname, $username, $password, $email){
     );
 
     if($get_user_result){
-        redirect_to('dashboard.php');
+        redirect_to('index.php');
     }else{
         // user does not exist
         return 'User could not be updated, please try again';
+    }
+}
+
+function getAllUsers(){
+    $pdo = Database::getInstance()->getConnection();
+
+    $get_user_query = "SELECT * FROM tbl_user";
+    $users = $pdo->query($get_user_query);
+
+    if($users){
+        return $users;
+    }else{
+        return false;
+    }
+}
+
+function deleteUser($id){
+    $pdo = Database::getInstance()->getConnection();
+
+    $delete_user_query = "DELETE FROM tbl_user WHERE user_id = :id";
+    $delete_user_set = $pdo->prepare($delete_user_query);
+    $delete_user_result = $delete_user_set->execute(
+        array(
+            ':id'=>$id
+        )
+    );
+
+    if($delete_user_result && $delete_user_set->rowCount() > 0){
+        redirect_to('admin_deleteUsers.php');
+    }else{
+        // user does not exist
+        return false;
     }
 }
