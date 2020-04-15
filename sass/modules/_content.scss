@@ -2,9 +2,12 @@
 // ---------WELCOME----------
 #landing
 {
-    height: 290px;
-    width: 100%;
-    // background-color: #959595;
+    display: flex;
+    justify-content: center;
+    img{
+        width: 100%;
+
+    }
 }
 
 #welcomeDesk
@@ -22,7 +25,7 @@
 {
     font-family: 'Open Sans', sans-serif;
     font-style: bold;
-    font-size: 22px;
+    font-size: 32px;
     margin-left: 10px;
 }
 
@@ -221,19 +224,20 @@ display: none;
 
 .infoSquare
 {
-    width: 90%;
+    width: auto;
     height: 450px;
-    background-color: #FF4A6B;
+    // background-color: #FF4A6B;
     text-align: center;
     margin: auto;
     color: white;
     font-family: 'Open Sans', sans-serif;
     font-size: 22px;
+    
 }
 
 .infoSquare img
 {
-    width: 100%;
+    width: 300px;
     height: 300px;
 }
 
@@ -249,11 +253,11 @@ display: none;
 
 #facts p
 {
-    border: 3px solid;
+    // border: 3px solid;
     padding-top: 15px;
     padding-bottom: 15px;
     border-radius: 8px;
-    text-align: center;
+    text-align: start;
     width: 80%;
     margin-top: 40px;
 }
@@ -303,11 +307,15 @@ img{
     justify-content: space-around;
     padding-right: 20px;
 }
+#factTitle{
+    text-align: center;
+}
 
 
 
 
 @media screen and (min-width: 640px) {
+
 
     #box1 h2,#box2 h2,#box3 h2
     {
@@ -385,20 +393,22 @@ img{
     {
         display: flex;
         flex-direction: row;
+        align-items: center;
+        margin-bottom: 100px;
     }
 
     .welcome
     {
         margin-left: 16%;
-        margin-top: 90px;
+        // margin-top: 90px;
     }
 
     #landing
     {
-        width: 40%;
+        width: 60%;
         margin-right: 10%;
-        margin-bottom: 100px;
-        margin-top: 50px;
+        // margin-bottom: 100px;
+        // margin-top: 50px;
         margin-left: 20%;
     }
 
@@ -475,6 +485,7 @@ img{
     {
         display: flex;
         flex-direction: row;
+        justify-content: space-evenly;
         width: 85%;
         margin: auto;
     }

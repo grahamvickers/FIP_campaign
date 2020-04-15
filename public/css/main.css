@@ -50,7 +50,10 @@ ul, li, a {
   }
 }
 #landing {
-  height: 290px;
+  display: flex;
+  justify-content: center;
+}
+#landing img {
   width: 100%;
 }
 
@@ -66,7 +69,7 @@ ul, li, a {
 #welcome h2 {
   font-family: "Open Sans", sans-serif;
   font-style: bold;
-  font-size: 22px;
+  font-size: 32px;
   margin-left: 10px;
 }
 
@@ -218,9 +221,8 @@ button {
 }
 
 .infoSquare {
-  width: 90%;
+  width: auto;
   height: 450px;
-  background-color: #FF4A6B;
   text-align: center;
   margin: auto;
   color: white;
@@ -229,7 +231,7 @@ button {
 }
 
 .infoSquare img {
-  width: 100%;
+  width: 300px;
   height: 300px;
 }
 
@@ -242,11 +244,10 @@ button {
 }
 
 #facts p {
-  border: 3px solid;
   padding-top: 15px;
   padding-bottom: 15px;
   border-radius: 8px;
-  text-align: center;
+  text-align: start;
   width: 80%;
   margin-top: 40px;
 }
@@ -286,6 +287,10 @@ button {
   width: 50px;
   justify-content: space-around;
   padding-right: 20px;
+}
+
+#factTitle {
+  text-align: center;
 }
 
 @media screen and (min-width: 640px) {
@@ -351,18 +356,17 @@ button {
   #section1 {
     display: flex;
     flex-direction: row;
+    align-items: center;
+    margin-bottom: 100px;
   }
 
   .welcome {
     margin-left: 16%;
-    margin-top: 90px;
   }
 
   #landing {
-    width: 40%;
+    width: 60%;
     margin-right: 10%;
-    margin-bottom: 100px;
-    margin-top: 50px;
     margin-left: 20%;
   }
 
@@ -427,6 +431,7 @@ button {
   #squareWrapper {
     display: flex;
     flex-direction: row;
+    justify-content: space-evenly;
     width: 85%;
     margin: auto;
   }
@@ -852,22 +857,22 @@ a {
 
 footer {
   margin-top: 140px;
-  background-color: #2C2C2C;
-  padding-top: 30px;
-  padding-bottom: 30px;
+  background-color: #3936ab;
+  padding-top: 50px;
+  padding-bottom: 40px;
   width: 100%;
-}
-footer div {
   display: flex;
-  flex-direction: row;
-  justify-content: space-between;
+  justify-content: space-around;
 }
 footer div p {
   color: #ffffff;
-  font-size: 12px;
+  font-size: 14px;
   text-align: center;
   margin: auto;
-  width: 90%;
+}
+footer div a {
+  font-size: 14px;
+  border-bottom: 2px #f2f2f2;
 }
 footer img {
   width: 50px;
@@ -891,9 +896,10 @@ footer img {
 }
 
 #footerNav a {
-  font-size: 20px;
-  color: white;
-  padding-left: 35px;
+  font-size: 16px;
+  color: #f2f2f2;
+  display: flex;
+  justify-content: center;
 }
 
 /*# sourceMappingURL=main.css.map */
