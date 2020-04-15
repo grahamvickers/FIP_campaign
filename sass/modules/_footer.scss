@@ -1,19 +1,24 @@
 footer{
     margin-top: 140px;
-    background-color: #2C2C2C;
-    padding-top: 30px; 
-    padding-bottom: 30px;
+    background-color: $button-color;
+    padding-top: 50px; 
+    padding-bottom: 40px;
     width: 100%;
+    display: flex;
+    justify-content: space-around;
     div{ 
-        display: flex;
-        flex-direction: row;
-        justify-content: space-between;
+        // display: flex;
+        // justify-content: space-between;
         p{
             color: #ffffff;
-            font-size: 12px;
+            font-size: 14px;
             text-align: center;
             margin: auto;
-            width: 90%;
+            // width: 90%;
+        }
+        a{
+            font-size: 14px;
+            border-bottom: 2px #f2f2f2;
         }
     }
     img{
@@ -42,7 +47,9 @@ footer{
 
 #footerNav a
 {
-   font-size: 20px;
-   color: white;
-   padding-left: 35px;
+    font-size: 16px;
+    color: #f2f2f2;
+    
+    display: flex;
+    justify-content: center;
 }

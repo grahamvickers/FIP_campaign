@@ -8,21 +8,20 @@ export default {
                 <div class="welcome">
                     <h2>Be Educated, Be Kind,<br>Be the Cure</h2>
                     <h3>#WeAreGenZ</h3>
-                    <button>Get The Facts</button>
+                    <button href="#factTitle">Get The Facts</button>
                 </div>
             </div>
 
             <div id="landing">
-                <img src="./public/images/banner.jpg" class="landing" alt="landing image" width="100%">
+                <img src="./public/images/banner.jpg" class="landing" alt="landing image">
             </div>
-        
-        </div>
 
-        <div id="welcome">
-            <div class="welcome">
-                <h2>Be Educated, Be Kind,<br>Be the Cure</h2>
-                <h3>#WeAreGenZ</h3>
-                <button>Get The Facts</button>
+            <div id="welcome">
+                <div class="welcome">
+                    <h2>Be Educated, Be Kind,<br>Be the Cure</h2>
+                    <h3>#WeAreGenZ</h3>
+                    <button>Get The Facts</button>
+                </div>
             </div>
         </div>
 
@@ -101,24 +100,23 @@ export default {
             <div id="squareWrapper">
             <div id="infoSquares">
             <div class="infoSquare1 infoSquare">
-                <img src="./public/images/building.jpg" class="" alt="Regional HIV/AIDS Connection" height="" width="">
-                <h3>Regional HIV/AIDS<br>Connection</h3>
+                <img src="./public/images/london.jpg" class="" alt="Regional HIV/AIDS Connection" height="" width="">
+                <h3>Middlesex-London<br> Health Unit</h3>
             </div>
         </div>
 
         <div id="infoSquares">
             <div class="infoSquare2 infoSquare">
-                <img src="./public/images/building.jpg" class="" alt="Regional HIV/AIDS Connection" height="" width="">
-                <h3>Student Health Services<br>
-                At Western University</h3>
+                <img src="./public/images/western.jpg" class="" alt="Regional HIV/AIDS Connection" height="" width="">
+                <h3>Wellness Centre<br>
+                    Western University</h3>
             </div>
         </div>
 
         <div id="infoSquares">
             <div class="infoSquare3 infoSquare">
-                <img src="./public/images/building.jpg" class="" alt="Regional HIV/AIDS Connection" height="" width="">
-                <h3>Regional HIV/AIDS<br>
-                Connection</h3>
+                <img src="./public/images/hydepark.jpg" class="" alt="Regional HIV/AIDS Connection" height="" width="">
+                <h3>Hyde Park Medical &<br>Walk-In Clinic</h3>
             </div>
         </div>
             
@@ -127,17 +125,16 @@ export default {
         </div>
 
 
-
+        <h2 id="factTitle">Did You Know?</h2>
         <div id="facts">
-
             <div id="graphic">
                 <img src="./public/images/know.svg" class="" alt="" height="300px" >
             </div>
 
             <div id="fact">
-                <p>1 in 4 of of all new HIV infections are between ages 13 and 24</p>
-                <p>1 in 7 people who have AIDS are not aware of their condition</p>
-                <p>7.9 million people across the globe with HIV/AIDS in 2018</p>
+                <p>•    1 in 4 of of all new HIV infections are between ages 13 and 24</p>
+                <p>•    1 in 7 people who have AIDS are not aware of their condition</p>
+                <p>•    7.9 million people across the globe with HIV/AIDS in 2018</p>
             </div>
 
         </div>
