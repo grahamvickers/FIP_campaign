@@ -634,9 +634,11 @@ table tr:hover {
 }
 table #delete {
   font-size: 20px;
+  margin-left: 25%;
+  color: #3f3f3f;
 }
 table #delete:hover {
-  color: #f2f2f2f2;
+  color: #c54d4df2;
 }
 
 #mainHeader {
@@ -709,6 +711,10 @@ table #delete:hover {
   cursor: pointer;
 }
 
+#admin {
+  text-align: center;
+}
+
 @media screen and (min-width: 960px) {
   .adminCon {
     display: flex;
@@ -742,6 +748,18 @@ table #delete:hover {
 #adminForm form input:focus {
   background-color: #3936ab;
   color: #f2f2f2;
+}
+#adminForm form textarea {
+  border-radius: 5px;
+  border-style: none;
+  padding: 10px;
+  font-size: 14px;
+  margin: 10px;
+  min-width: 280px;
+  text-decoration: none;
+  outline: none;
+  background-color: #f2f2f2;
+  border: 2px solid #3936ab;
 }
 #adminForm form button {
   border-radius: 5px;
@@ -795,7 +813,7 @@ h3 {
 
 h4 {
   font-family: "Poppins", Arial, Helvetica, sans-serif;
-  color: #efcc4f;
+  color: #3f3f3f;
   font-size: 22px;
 }
 

@@ -9,6 +9,9 @@ require_once ABSPATH.'/config/database.php';
 require_once ADMIN_SCIPT_PATH.'/login.php';
 require_once ADMIN_SCIPT_PATH.'/functions.php';
 require_once ADMIN_SCIPT_PATH.'/user.php';
+require_once ADMIN_SCIPT_PATH.'/mailer.php';
+require_once ADMIN_SCIPT_PATH.'/getBlog.php';
+require_once ADMIN_SCIPT_PATH.'/blog.php';
 
 require_once 'phpmailer/SMTP.php';
 require_once 'phpmailer/PHPMailer.php';

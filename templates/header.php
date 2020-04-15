@@ -12,7 +12,8 @@
                 <router-link class="route" to="/facts">Get Tested</router-link>
                 <router-link class="route" to="/facts">About</router-link>
                 <router-link class="route" to="/facts">Contact</router-link> -->
-                
+                <a href="index.php">HOME</a>
+                <a href="blog.php">BLOG</a>
                 <router-link class="route" id="signupBtn" to="/home/#mailingList">SIGNUP</router-link>
         </div>
     </div>
