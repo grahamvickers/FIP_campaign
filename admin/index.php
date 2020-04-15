@@ -26,7 +26,7 @@
                     if (hr < 11) {
                     document.write("Good morning  <?php echo $_SESSION['user_name'];?>, looks like you need a cup of coffee!");
                     }
-                    if (hr = 11) {
+                    if (hr > 11) {
                     document.write("Good afternoon  <?php echo $_SESSION['user_name'];?>, how was lunch?");
                     }
                     if (hr > 17) {

@@ -147,15 +147,15 @@ export default {
 
             <div id="socialGraphics">
                 <div id="graphic1">
-                    <img src="./public/images/instagram.svg" alt="Instagram Logo">
+                    <a href="" target="_blank"><img src="./public/images/instagram.svg" alt="Instagram Logo"></a>
                 </div>
 
                 <div id="graphic2">
-                    <img src="./public/images/youtube.svg" alt="Instagram Logo">                
+                    <a href="https://youtu.be/uWAMqHeaZgI" target="_blank"><img src="./public/images/youtube.svg" alt="Instagram Logo"></a>                
                 </div>
                 
                 <div id="graphic3">
-                    <img src="./public/images/facebook.svg" alt="Instagram Logo">
+                    <a href="#"><img src="./public/images/facebook.svg" alt="Instagram Logo"></a>
                 </div>
             </div>
 

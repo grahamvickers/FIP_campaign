@@ -24,8 +24,9 @@ $getBlog = getBlog($blog_table);
 <body>
     <?php include 'templates/header.php'?>
     
-    <main >
-        <h2>Time to Talk Blog</h2>
+    <main id="blog">
+        <h2>Time to Talk - Blog</h2>
+        <h4>Browse the latest blogs posted by our team of proffessionals below.</h4>
         <div id="blogPosts">
             <!-- this is to display all products -->
             <?php while($row = $getBlog->fetch(PDO::FETCH_ASSOC)):?>

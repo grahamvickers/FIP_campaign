@@ -5,6 +5,12 @@ header .route {
   font-family: "Poppins Regular", Arial, Helvetica, sans-serif;
 }
 
+.headLink {
+  background-color: #3936ab;
+  padding: 10px 32px;
+  border-radius: 50px;
+}
+
 ul, li, a {
   text-decoration: none;
   color: black;
@@ -791,6 +797,10 @@ table #delete:hover {
   margin: 50px;
 }
 
+#blog {
+  margin: 50px;
+}
+
 body {
   background-color: #f2f2f2;
   box-sizing: border-box;
@@ -834,6 +844,13 @@ a {
   font-size: 16px;
   text-decoration: none;
   margin: 20px;
+}
+
+label {
+  font-family: "Poppins", Arial, Helvetica, sans-serif;
+  color: #3f3f3f;
+  font-size: 16px;
+  text-decoration: none;
 }
 
 #adminNav {

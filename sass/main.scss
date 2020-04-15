@@ -20,7 +20,10 @@
 #adminPage{
     margin: 50px;
 }
+#blog{
+    margin: 50px;
 
+}
 body{
    //width: 100%;
    background-color: #f2f2f2;
@@ -67,6 +70,12 @@ a{
     font-size: 16px;
     text-decoration: none;
     margin: 20px;
+}
+label{
+    font-family: 'Poppins', Arial, Helvetica, sans-serif;
+    color: $copy-color;
+    font-size: 16px;
+    text-decoration: none;
 }
 
 

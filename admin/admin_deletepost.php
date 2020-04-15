@@ -2,14 +2,14 @@
     require_once '../load.php';
     confirm_logged_in();
 
-    $users = getAllUsers();
-    if(!$users){
-        $message = 'Failed to get user list';
+    $posts = getAllPosts();
+    if(!$posts){
+        $message = 'Failed to get blog list';
     }
 
     if(isset($_GET['id'])){
-        $user_id = $_GET['id'];
-        $delete_result = deleteUser($user_id);
+        $post_id = $_GET['id'];
+        $delete_result = deletePost($post_id);
 
         if(!$delete_result){
             $message = 'Failed to delete user';
@@ -38,19 +38,17 @@
         <table>
             <thead>
                 <tr>
-                    <th>USER ID</th>
-                    <th>USER NAME</th>
-                    <th>USER EMAIL</th>
-                    <th>REMOVE USER</th>
+                    <th>POST ID</th>
+                    <th>POST NAME</th>
+                    <th>REMOVE POST</th>
                 </tr>
             </thead>
             <tbody>
-            <?php while ($user = $users->fetch(PDO::FETCH_ASSOC)):?>
+            <?php while ($post = $posts->fetch(PDO::FETCH_ASSOC)):?>
                 <tr>
-                    <td><?php echo $user['user_id'];?></td>
-                    <td><?php echo $user['user_name'];?></td>
-                    <td><?php echo $user['user_email'];?></td>
-                    <td><a id="delete" href="admin_deleteUsers.php?id=<?php echo $user['user_id'];?>">REMOVE</a></td>
+                    <td><?php echo $post['post_id'];?></td>
+                    <td><?php echo $post['post_title'];?></td>
+                    <td><a id="delete" href="admin_deletepost.php?id=<?php echo $post['post_id'];?>">REMOVE</a></td>
                 </tr>
             <?php endwhile;?>
             </tbody>
