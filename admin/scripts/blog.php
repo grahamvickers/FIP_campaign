@@ -14,6 +14,18 @@ function getAll(){
     }
 }
 
+function getAllPosts(){
+    $pdo = Database::getInstance()->getConnection();
+
+    $get_posts_query = "SELECT * FROM tbl_blog";
+    $posts = $pdo->query($get_posts_query);
+
+    if($posts){
+        return $posts;
+    }else{
+        return false;
+    }
+}
 
 // delete post
 function deletePost($id){

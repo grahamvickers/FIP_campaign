@@ -1,5 +1,5 @@
 <?php
-// finish later
+
 function getBlog(){
     $pdo = Database::getInstance()->getConnection();
     $query = 'SELECT * FROM tbl_blog GROUP BY id';

@@ -5,6 +5,11 @@ header{
         font-family: 'Poppins Regular', Arial, Helvetica, sans-serif;
     }
 }
+.headLink{
+    background-color: $button-color; 
+    padding: 10px 32px;
+    border-radius: 50px;
+}
 ul,li,a{
     text-decoration: none;
     color: black;
