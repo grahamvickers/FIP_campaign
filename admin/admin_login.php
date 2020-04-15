@@ -28,20 +28,22 @@
     <title>Admin Login</title>
 </head>
 <body>
-    <h2>Login Page</h2>
-    <?php echo !empty($message)? $message: ''; ?>
-    <div id="adminForm">
-        <form action="admin_login.php" method="post">
-            <label for="">Username:</label>
-            <input type="text" name="username" id="username" value="" placeholder="Knock knock, whos there?">
+<?php include '../templates/headerLogin.php'?>
+    <main id="admin">
+        <h2>Login Page</h2>
+        <?php echo !empty($message)? $message: ''; ?>
+        <div id="adminForm">
+            <form action="admin_login.php" method="post">
+                <label for="">Username:</label>
+                <input type="text" name="username" id="username" value="" placeholder="Knock knock, whos there?">
 
-            <label for="">Password:</label>
-            <input type="password" name="password" id="password" value="" placeholder="Your secret is safe with me;)">
+                <label for="">Password:</label>
+                <input type="password" name="password" id="password" value="" placeholder="Your secret is safe with me;)">
 
-            <button name="submit">Submit</button>
-        </form>
-    </div>
-
+                <button name="submit">Submit</button>
+            </form>
+        </div>
+    </main>
     <?php include '../templates/footerAdmin.php'?>
 </body>
 </html>

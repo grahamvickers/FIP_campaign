@@ -1,17 +1,15 @@
 <?php
     require_once '../load.php';
     confirm_logged_in();
-    user_verification();
 
 if(isset($_POST['submit'])){
-    $fname = trim($_POST['fname']);
-    $username = trim($_POST['username']);
-    $email = trim($_POST['email']);
+    $subject = trim($_POST['subject']);
+    $body = trim($_POST['body']);
 
-    if(empty($email) || empty($username) || empty($fname)){
+    if(empty($subject) || empty($body)){
         $message = 'Please fill out the required fields';
     }else{
-        $message = createUser($fname, $username, $email);
+        $message = sendMail($subject, $body);
     }
 }
 ?>
@@ -30,26 +28,23 @@ if(isset($_POST['submit'])){
 </head>
 <body>
     <?php include '../templates/headerAdmin.php'?>
-    
     <main id="admin">
-
-        <h2>Create a new user</h2>
-        <h4>Don't worry about making a password, it will make one for you.</h4>
+        <h2>Send an Email</h2>
+        <h4>Email will be sent to all the mailing list subscribers</h4>
 
         <?php echo!empty($message)? $message: '';?>
         <div id="adminForm">
-            <form action="admin_createuser.php" method="post">
-                <input type="text" name="fname" value="" placeholder="First Name"><br><br>
+            <form action="admin_mailer.php" method="post">
+                <input type="text" name="subject" value="" placeholder="Subject"><br><br>
                 
-                <input type="text" name="username" value="" placeholder="Username"><br><br>
+                <input type="file" name="cover" value="" placeholder="Landing Image"><br><br>  
 
-                <input type="email" name="email" value="" placeholder="Email"><br><br>
+                <textarea name="body" placeholder="Body Text"></textarea><br><br>
 
-                <button name="submit">CREATE USER</button>
+                <button name="submit">SEND</button>
             </form>
         </div>
     </main> 
-    
     <?php include '../templates/footerAdmin.php'?>
 </body>
 </html>
