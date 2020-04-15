@@ -10,28 +10,33 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Prerequisites
 
-You must have the following programs installed: 
+You must have the following programs installed to view the application: 
 
 * MAMP/ WAMP
 
-### Installing
+## Installing
 
-You will need to install the following in order to run the website:
-
-To see the sign up function you need to install the .sql file from the 'data' folder, this can be done in the Terminal or through phpMyAdmin. Create a new database and name it "db_campaign", then import the .sql file from the "data" folder in the project folder.
-
-Install the following through the command line (required):
+Copy the following below and paste it into your terminal. This will download the project to you desired location. 
 
 ```
-$ npm i -s express
-$ npm i -s mysql
+$ git clone https://github.com/grahamvickers/FIP_campaign/
 ```
 
 ## Deployment
 
-* Once everything is installed, now start the MAMP/WAMP server
+Using MAMP/ WAMP:
 
-* Then in the browser of your choice go to: localhost:(your MAMP/WAMP server number)
+Move the project folder into either your 'htdocs' or 'WWW' folder within MAMP or WAMP. Then navigate to your MAMP or WAMP server page and select the project.
+
+Next, go to your phpmyadmin page and create a new database named 'db_fip'. Then import the database "db_fip" from the database folder in the proect folder. 
+
+After the upload is completed, you will now be able to access the backend CMS and blog. 
+
+Then in the browser of your choice, paste the following url:
+
+```
+localhost:8888
+``` 
 
 ## Built With
 
